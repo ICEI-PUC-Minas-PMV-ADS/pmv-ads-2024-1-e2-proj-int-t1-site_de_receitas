@@ -9,21 +9,17 @@ Em um cenário onde poucos sabem como diversificar/preparar sua alimentação ou
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Esse projeto tem o objetivo de disponibilizar a educação alimentar para aqueles que têm curiosidade de experimentar na cozinha mas não tem o conhecimento necessário, trazer comodidade para se preparar receitas, possibilitar a troca de informações culinárias uns com os outros, encontrar receitas utilizando ingredientes como forma de pesquisa, não apenas simplificando na hora de planejar o que comer, mas mostrando diversas sugestões de receitas e modos de preparo dando assim uma alimentação mais rica e praticidade ao usuário ao mesmo tempo que se conscientiza as pessoas sobre o desperdício alimentar.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Muitos já se depararam com o questionamento: ‘O que posso preparar usando isso?’ Ou ‘Como preparo isso?’ E até mesmo ‘Como posso encaixar isso em minha alimentação?’ E quase sempre não tendo ideia do que se preparar para variar as refeições e sair da rotina de se comer as mesmas receitas já conhecidas.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Ao pensar nisso, o projeto foi criado com intuito de simplificar o modo em que nos organizamos na hora de preparar refeições. Seja conhecendo novas receitas,  buscando como prepará-las corretamente e até mesmo conhecendo sobre a versatilidade de alimentos em pratos distintos. 
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Outro tópico para sua criação é evitar o desperdício de grande parte dos alimentos, que por falta de informação não são aproveitados por completo, como é o caso do abacaxi que além de seu interior ser consumível, a casca pode ser usada para se fazer suco. outros que são comumente descartados são os talos de Taioba e Couve.
+
 
 ## Público-Alvo
 
