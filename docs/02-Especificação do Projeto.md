@@ -120,23 +120,33 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RNF-01| O sistema não deve expor dados sensíveis do usuário | ALTA | 
-|RF-002| O sistema deve ser desenvolvido utilizando a arquitetura MVC  |Alta |
+|RNF-01| O sistema deve permitir que o usuário se cadastre | ALTA | 
+|RF-002| O sistema deve permitir que o usuário cadastre novas receitas com o nome dessas receitas e seus respectivos ingredientes e modos de preparo | Alta |
+|RF-003| O sistema deve permitir que usuários adicionem avaliações às receitas por meio de notas que variam de um número à outro (ex: 0 à 5) | Alta |
+|RF-004| O sistema deve permitir que o usuário pesquise por receitas cadastradas através de seus ingredientes ou nomes | Alta |
+|RF-005| O sistema deve permitir que o usuário edite receitas já cadastradas | Alta |
+|RF-006| O sistema deve permitir que o usuário edite seus próprios dados | Alta |
+|RF-007| O sistema deve permitir que o usuário desfaça sua avalição | Alta |
+|RF-008| O sistema deve permitir que o usuário exclua seu perfil | Alta |
+|RF-009| O sistema deve fornecer ao usuário uma lista com todas as receitas já cadastradas por ele | Alta |
+|RF-010| O sistema deve permitir que usuário exclua receitas por ele cadastradas | Alta |
+|RF-011| O sistema deve permitir que usuário modifique a avaliação que ele fez anteriormente sobre determinada receita | Média |
+
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-01| O sistema não deve expor dados sensíveis do usuário | ALTA | 
-|RNF-02| O sistema deve ser desenvolvido utilizando a arquitetura MVC |Alta |
-|RNF-03| O sistema deve ser desenvolvido utilizando o framework ASP.NET Core MVC |Alta
-|RNF-04 | O sistema deve ser capaz de lidar com vários usuários simultâneos sem sofrer degradações significativas no desempenho | Média
-|RNF-05 | O sistema deve suportar múltiplos usuários simultaneamente | Alta |
-|RNF-06 | O sistema não deve ter tempo médio de resposta superior a 5s | Média |
-|RNF-07 | O sistema deve ser desenvolvido utilizando práticas recomendadas de clean code | Média |
-|RNF-08 | O sistema deve ser executado nos navegadores Google Chrome, Opera e Edge | Média
-|RNF-09 | O sistema deve ser expansivo | Média |
-|RNF-10 |O sistema deve continuar funcionando apresentando conteúdo já carregado em caso de queda de conexão ou instabilidade no banco de dados | Média |
+|RNF-001| O sistema não deve expor dados sensíveis do usuário | ALTA | 
+|RNF-002| O sistema deve ser desenvolvido utilizando a arquitetura MVC |Alta |
+|RNF-003| O sistema deve ser desenvolvido utilizando o framework ASP.NET Core MVC |Alta
+|RNF-004| O sistema deve ser capaz de lidar com vários usuários simultâneos sem sofrer degradações significativas no desempenho | Média
+|RNF-005| O sistema deve suportar múltiplos usuários simultaneamente | Alta |
+|RNF-006| O sistema não deve ter tempo médio de resposta superior a 5s | Média |
+|RNF-007| O sistema deve ser desenvolvido utilizando práticas recomendadas de clean code | Média |
+|RNF-008| O sistema deve ser executado nos navegadores Google Chrome, Opera e Edge | Média
+|RNF-009| O sistema deve ser expansivo | Média |
+|RNF-010| O sistema deve continuar funcionando apresentando conteúdo já carregado em caso de queda de conexão ou instabilidade no banco de dados | Média |
 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
