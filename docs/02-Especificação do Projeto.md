@@ -79,8 +79,15 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             | Tipo |
 |--|-------------------------------------------------------| ---- |
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01| Orçamentária: Estima-se em aproximadamente R$120.000,00 os custos do desenvolvimento do projeto incluindo as despesas com pesquisa, design, codificação, testes, armazenamento na nuvem e marketing. |Gestão|
+|02| Prazo: a equipe tem um prazo total de 4 meses para a conclusão do desenvolvimento da aplicação e o seu lançamento |Gestão|
+|03| Falta de experiência no tema específico do projeto: pouca experiência da equipe em termos de dotes culinários e conhecimento incipiente em relação a banco de dados |Gestão|
+|04| Público-alvo diverso: a necessidade de atender a diversos perfis de usuários poderá ser um dificultador do processo uma vez que a aplicação precisa apresentar conteúdo muito abrangente |Negócio|
+|05| Concorrência: a grande quantidade de sites de receitas exigirá uma diferenciação importante para que a aplicação a ser desenvolvida se destaque |Negócio|
+|06| Modelo de monetização: Para a sustentabilidade do negócio, o aplicativo deverá ter a modalidade de usuário premium com cobrança de assinatura e a busca por parceiros anunciantes, tais como indústrias alimentícias e de eletrodomésticos |Negócio|
+
+
+
 
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
