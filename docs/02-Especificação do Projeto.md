@@ -100,8 +100,16 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+| Ricardo, 21 anos, estudante universitário | Buscar eficientemente por receitas diversificadas | Encontrar receitas que se adequem às minhas restrições alimentares impostas por minha condição médica |
+| Ricardo, 21 anos, estudante universitário | Conhecer os ingredientes envolvidos em algumas receitas famosas | Verificar se posso consumi-las sem que agravem os sintomas da minha doença |
+| Victoria, 20 anos, estudante e atendente | Descobrir receitas rápidas, saborosas e saudáveis | Necessidade de Victoria cuidar de sua saúde e bem-estar, mesmo em meio à sua agenda lotada |
+| Victoria, 20 anos, estudante e atendente | Encontrar receitas econômicas | Maneira rápida e fácil de encontrar receitas saudáveis e econômicas, para que possa preparar refeições nutritivas sem gastar muito tempo ou dinheiro |
+| Jaqueline, 34 anos, servidora pública e mãe | Encontrar receitas saudáveis e práticas | Proporcionar uma alimentação saudável para a família, principalmente para filha de 3 anos para que ela se acostume desde cedo com os ingredientes naturais |
+| Jaqueline, 34 anos, servidora pública e mãe | Um site ou aplicativo que possibilite comentários / interações | Compartilhar as suas experiências culinárias dando dicas de receitas que já testou anteriormente |
+| Carlos, 29 anos, desenvolvedor de software e cozinheiro hobbysta | Poder filtrar receitas por nível de complexidade | Poder escolher opções práticas para o meu dia a dia corrido e mais elaboradas para me divertir nos fins de semana |
+| Carlos, 29 anos, desenvolvedor de software e cozinheiro hobbysta | Poder transformar o meu hobby em uma experiência que interage com outros usuários | Poder transformar o meu hobby em uma experiência que interage com outros usuários |
+| Alexandro, 28 anos, Nutricionista | Poder encontrar receitas utilizando o mesmo alimento | Entregar ao cliente um certa diversidade na alimentação |
+| Alexandro, 28 anos, Nutricionista | Poder agrupar receitas de forma centralizada | Poder ver e utilizar as receitas de forma prática ao montar um cardápio |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
