@@ -6,7 +6,7 @@
 
 `SEMESTRE 2`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto em desenvolvimento tem como objetivo principal ampliar o conhecimento culinário de diversos públicos, promovendo a interação entre culturas e faixas etárias. Por meio de uma plataforma, pretende-se oferecer educação alimentar, facilitar o acesso a receitas variadas e conscientizar sobre o desperdício de alimentos, atendendo às necessidades de usuários com diferentes níveis de conhecimento culinário e preferências alimentares.
 
 ## Integrantes
 
