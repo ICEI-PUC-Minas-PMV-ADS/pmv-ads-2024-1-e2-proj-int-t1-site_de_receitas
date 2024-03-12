@@ -120,15 +120,24 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | ALTA | 
-|RF-002| A aplicação deve emitir um relatório de tarefas realizadas no mês   | MÉDIA |
+|RNF-01| O sistema não deve expor dados sensíveis do usuário | ALTA | 
+|RF-002| O sistema deve ser desenvolvido utilizando a arquitetura MVC  |Alta |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-01| O sistema não deve expor dados sensíveis do usuário | ALTA | 
+|RNF-02| O sistema deve ser desenvolvido utilizando a arquitetura MVC |Alta |
+|RNF-03| O sistema deve ser desenvolvido utilizando o framework ASP.NET Core MVC |Alta
+|RNF-04 | O sistema deve ser capaz de lidar com vários usuários simultâneos sem sofrer degradações significativas no desempenho | Média
+|RNF-05 | O sistema deve suportar múltiplos usuários simultaneamente | Alta |
+|RNF-06 | O sistema não deve ter tempo médio de resposta superior a 5s | Média |
+|RNF-07 | O sistema deve ser desenvolvido utilizando práticas recomendadas de clean code | Média |
+|RNF-08 | O sistema deve ser executado nos navegadores Google Chrome, Opera e Edge | Média
+|RNF-09 | O sistema deve ser expansivo | Média |
+|RNF-10 |O sistema deve continuar funcionando apresentando conteúdo já carregado em caso de queda de conexão ou instabilidade no banco de dados | Média |
+
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
