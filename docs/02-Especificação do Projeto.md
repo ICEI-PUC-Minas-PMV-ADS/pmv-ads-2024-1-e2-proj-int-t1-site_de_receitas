@@ -8,9 +8,81 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+### Persona 1
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+Nome: Ricardo
+
+Idade: 21
+
+Ocupação: Estudante universitário
+
+História: Ricardo passou grande parte de sua vida com idas ao hospital alegando estar passando mal e sentindo dores, principalmente após refeições. Após muitos exames, que duraram anos,durante sua vida universitária, descobriu tardiamente que é portador da doença de chron, doença auto-imune que causa inflamação intestinal e dificuldade na absorção de nutrientes. Desde então, passou a ter que adequar a sua dieta à sua condição médica, que impõe diversas restrições alimentares, e à sua vida universitária.
+
+Problemas/Frustrações: Não conseguir encontrar receitas diversificadas que se adequem à sua condição especial e que sejam práticas o suficiente para serem feitas em meio à sua vida ocupada de estudante, e não saber se ele pode experimentar determinadas receitas por desconhecer os ingredientes nelas envolvidos.
+
+Metas: Encontrar receitas diversificadas que encaixam em sua restrição alimentar e conhecer melhor os ingredientes que compõem cada receita.
+
+### Persona 2
+
+Nome: Victoria
+
+Idade: 20
+
+Ocupação: Estudante e Atendente
+
+História: Victoria é uma jovem estudante universitária que trabalha como atendente em meio período para ajudar a custear seus estudos e despesas pessoais. Ela está no segundo ano de faculdade, estudando Engenharia de Software. 
+
+Problemas/Frustrações: Tem uma rotina agitada entre estudos, trabalho e vida social, o que torna difícil encontrar tempo para cozinhar refeições saudáveis e saborosas, gastando assim muito dinheiro para comer fora de casa.
+
+Metas: Encontrar receitas que se encaixem em sua agenda lotada e que sejam fáceis e rápidas de preparar.
+
+### Persona 3
+
+Nome: Jaqueline
+ 
+Idade: 34
+ 
+Ocupação: servidora pública e mãe
+ 
+História: Jaqueline é uma técnica judiciária, trabalha 6h por dia e é mãe da Sofia de 3 anos e casada com o Eduardo. A família mora em uma capital de um estado situado na região sul do Brasil e tem uma rotina bem corrida, de levar a filha para a escola, ir trabalhar, ir para academia, pegar a filha na escola e à noite prefere fazer receitas práticas, porém saudáveis para cozinhar com seu marido. Prefere ingredientes naturais pois deseja acostumar o paladar da filha com sabores naturais e assim retardar ao máximo a introdução de produtos industrializados na dieta da criança.
+ 
+Problemas/Frustrações: Apesar de não ter muito tempo disponível e também disposição em virtude da rotina agitada, não abre mão de incluir na alimentação uma dieta saudável, no entanto, as receitas que encontra na internet sempre exigem muitos ingredientes diferentes o que a leva ou desistir da receita ou procurar ingredientes alternativos que possua em casa.
+ 
+Metas: Ter acesso a um aplicativo ou site com receitas saudáveis de poucos ingredientes, ter também um espaço onde possa compartilhar as receitas que criou/modificou na sua busca por ingredientes alternativos às receitas tradicionais.
+
+### Persona 4
+
+Nome: Carlos 
+
+Idade:  29 anos
+
+Ocupação: Desenvolvedor de Software
+
+História: Carlos aprendeu a cozinhar com a família, e sempre teve associações muito positivas ao tempo que passava ajudando quando mais novo e eventualmente preparando os próprios pratos para que experimentassem juntos. Quando se mudou para longe dos pais para estudar isso parou de ser algo que fazem juntos, mas nunca deixou de compartilhar receitas que encontra com eles, ou de tentar proporcionar que decidam juntos o que podem preparar quando se reúnem.
+
+Problemas/Frustrações: 
+A paixão de Carlos por cozinhar é incompatível com sua rotina de trabalho corrida, e ele precisa encontrar novas receitas que possam servir bem a esse propósito. 
+Carlos não tem muito contato direto com pessoas que compartilhem do seu gosto por cozinhar, e precisa também de novas formas de buscar receitas que possa fazer por diversão. 
+Carlos preferiria ter uma solução online para catalogar e registrar suas receitas, de preferência uma que pudesse compartilhar facilmente com os pais. 
+Carlos gostaria de poder disponibilizar suas próprias versões de receitas para o público, por valorizar fortemente a experiência colaborativa que isso pode proporcionar.
+
+Metas:  Carlos quer aprimorar suas habilidades culinárias e mantê-las em constante prática. Também quer compartilhar suas receitas e experiências com outros entusiastas ou até mesmo só propor pequenas mudanças que podem deixar pratos simples mais gostosos. Precisa, também, encontrar receitas práticas e deliciosas para o dia a dia, considerando sua agenda agitada como desenvolvedor.
+
+### Persona 5
+
+Nome: Alexandro
+
+Idade: 28 anos
+
+Ocupação: Nutricionista
+
+História: Alexandro é um homem trans, mora na capital mineira onde divide apartamento com seu noivo Jonas. Alexandro sempre teve muito interesse pela alimentação e em como ela impacta na vida de cada um. Ele trabalha de forma online para uma ong que dá suporte a pessoas carentes.
+
+Problemas/Frustrações: Não encontrar com facilidade receitas diferentes utilizando o mesmo tipo de alimento de forma versátil e dificuldade em salvar receitas de forma centralizada em um lugar.
+
+Metas: Poder acessar diferentes receitas com o mesmo alimento com facilidade, ter agilidade em montar um cardápio com receitas saudáveis e variadas.
+
+
 
 > **Links Úteis**:
 > - [Rock Content](https://rockcontent.com/blog/personas/)
