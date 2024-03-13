@@ -128,7 +128,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RNF-01| O sistema deve permitir que o usuário se cadastre | ALTA | 
+|RF-001| O sistema deve permitir que o usuário se cadastre | Alta | 
 |RF-002| O sistema deve permitir que o usuário cadastre novas receitas com o nome dessas receitas e seus respectivos ingredientes e modos de preparo | Alta |
 |RF-003| O sistema deve permitir que usuários adicionem avaliações às receitas por meio de notas que variam de um número à outro (ex: 0 à 5) | Alta |
 |RF-004| O sistema deve permitir que o usuário pesquise por receitas cadastradas através de seus ingredientes ou nomes | Alta |
