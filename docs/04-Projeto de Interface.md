@@ -13,11 +13,6 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema 
 
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t1-site_de_receitas/blob/main/docs/img/Diagram%20de%20Fluxo.jpg?raw=true" alt="Diagrama de Fluxo">
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
-
-> **Links Úteis**:
-> - [Fluxograma online: seis sites para fazer gráfico sem instalar nada | Produtividade | TechTudo](https://www.techtudo.com.br/listas/2019/03/fluxograma-online-seis-sites-para-fazer-grafico-sem-instalar-nada.ghtml)
-
 ## Wireframes
 
 ![Exemplo de Wireframe](img/wireframe-example.png)
