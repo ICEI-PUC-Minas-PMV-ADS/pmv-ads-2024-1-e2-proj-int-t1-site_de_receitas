@@ -6,9 +6,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
-
-![receitas_diagrama_classes](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t1-site_de_receitas/assets/98063900/97b1d52b-8e01-44a5-b28b-cc454ea6ab34)
-
+![receitas_diagrama_classes (4)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t1-site_de_receitas/assets/98063900/b8bf1593-2f3e-4196-b780-f17b25908b13)
 
 
 ## Modelo ER (Projeto Conceitual)
