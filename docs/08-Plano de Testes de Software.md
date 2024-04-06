@@ -8,6 +8,8 @@ Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o
 
 Por exemplo:
 
+## Plano de Testes dos Requisitos Funcionais
+
 | **Caso de Teste** 	| **CT-03 – Avaliar receita** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-003 - O sistema deve permitir que usuários adicionem avaliações às receitas por meio de notas que variam de um número à outro (ex: 0 à 5). |
