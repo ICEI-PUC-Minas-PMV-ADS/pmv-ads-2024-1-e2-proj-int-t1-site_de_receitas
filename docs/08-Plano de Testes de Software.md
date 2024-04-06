@@ -30,6 +30,15 @@ Por exemplo:
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
 
+## Plano de Testes dos Requisitos Não Funcionais
+
+| **Caso de Teste** 	| **CT-03 – Avaliar receita** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-003 - O sistema deve permitir que usuários adicionem avaliações às receitas por meio de notas que variam de um número à outro (ex: 0 à 5). |
+| Objetivo do Teste 	| Verificar se o usuário conseguirá atribuir uma nota a receita. |
+| Passos 	| - Acessar a página de uma receita específica <br> - Adicionar uma avaliação com uma nota válida (entre 0 e 5) <br> - Verificar se a avaliação é exibida na receita <br> - Clicar em "Confirmar a nota" |
+|Critério de Êxito | - A avaliação será exibida na tela. |
+
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
