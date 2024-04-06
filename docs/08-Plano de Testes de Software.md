@@ -23,21 +23,24 @@ Por exemplo:
 | Objetivo do Teste 	| Verificar a função de busca por receitas ou ingredientes. |
 | Passos 	| - Acessar a página de pesquisa de receitas <br> -  Inserir um nome de receita ou ingrediente na barra de pesquisa <br> - Verificar se as receitas relevantes são exibidas nos resultados da pesquisa <br>  |
 |Critério de Êxito | - o nome da receita ou ingredientes digitados retornam as receitas salvas no banco de dados. |
-|  	|  	|
-| Caso de Teste 	| CT-02 – Efetuar login	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
-|Critério de Êxito | - O login foi realizado com sucesso. |
+
+
 
 ## Plano de Testes dos Requisitos Não Funcionais
 
-| **Caso de Teste** 	| **CT-03 – Avaliar receita** 	|
+| **Caso de Teste** 	| **CT-08 – Testar em diferentes navegadores** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-003 - O sistema deve permitir que usuários adicionem avaliações às receitas por meio de notas que variam de um número à outro (ex: 0 à 5). |
-| Objetivo do Teste 	| Verificar se o usuário conseguirá atribuir uma nota a receita. |
-| Passos 	| - Acessar a página de uma receita específica <br> - Adicionar uma avaliação com uma nota válida (entre 0 e 5) <br> - Verificar se a avaliação é exibida na receita <br> - Clicar em "Confirmar a nota" |
-|Critério de Êxito | - A avaliação será exibida na tela. |
+|	Requisito Associado 	| RNF-008 - O sistema deve ser executado nos navegadores Google Chrome, Opera e Edge. |
+| Objetivo do Teste 	| verificar se o sistema executa corretamente nos navegadores Google Chrome, Opera e Edge. |
+| Passos 	| - Acessar o sistema utilizando os navegadores Google Chrome, Opera e Edge <br> - Verificar se todas as funcionalidades estão disponíveis e funcionam corretamente em cada navegador <br>        |
+|Critério de Êxito | - O sistema funciona em todos os navegadores testados. |
+
+| **Caso de Teste** 	| **CT-09 – Avaliar a Expansividade** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RNF-009 - O sistema deve ser expansivo. |
+| Objetivo do Teste 	| verificar a expansividade do sistema. |
+| Passos 	| - Analisar a estrutura do sistema para verificar se é modular e permite a adição de novas funcionalidades sem alterar o código existente <br> - Testar a adição de novas funcionalidades e verificar se o sistema continua funcionando corretamente. |
+|Critério de Êxito | - O sistema funciona corretamente mesmo após a adição de novas funcionalidades. |
 
  
 > **Links Úteis**:
