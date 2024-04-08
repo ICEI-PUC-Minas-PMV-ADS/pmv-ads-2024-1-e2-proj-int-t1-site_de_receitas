@@ -9,6 +9,20 @@ Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o
 Por exemplo:
 
 ## Plano de Testes dos Requisitos Funcionais
+| **Caso de Teste** 	| **CT-01 - Cadastrar Usuário** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-001: O sistema deve permitir que o usuário se cadastre. |
+| Objetivo do Teste 	| Verificar a função de cadastrar usuários. |
+| Passos 	| - Acessar a página de cadastro de usuário - Adicionar nome de usuário, e-mail e confirmar senha         - Autenticar usuário cadastrado com e-mail e senha.
+|Critério de Êxito | -  Será exibido na tela "O usuário foi cadastrado com sucesso". |
+ 
+| **Caso de Teste** 	| **CT-02 - Cadastro de receitas** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-002: O sistema deve permitir que o usuário cadastre novas receitas com o nome dessas receitas e seus respectivos ingredientes e modos de preparo. |
+| Objetivo do Teste 	| Verificar a função de cadastrar uma receita, ingredientes e seu modo de preparo. |
+| Passos 	| - Ser um usuário cadastrado - Acessar a tela de criação de receita - Adicionar as informações: Nome da receita, Ingredientes, modo de preparo e tempo médio de preparo - Salvar a receita - Fazer uma busca pela receita criada. <br>  |
+|Critério de Êxito |  A receita foi cadastrada com sucesso. |
+
 
 | **Caso de Teste** 	| **CT-03 – Avaliar receita** 	|
 |:---:	|:---:	|
@@ -27,6 +41,19 @@ Por exemplo:
 
 
 ## Plano de Testes dos Requisitos Não Funcionais
+| **Caso de Teste** 	| **CT-05 - Sistema Multiusuário** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RNF-005: O sistema deve suportar múltiplos usuários simultaneamente. |
+| Objetivo do Teste 	| Verificar se a aplicaçãosuporta múltiplos usuários. |
+| Passos 	| - Acessar a aplicação por 2 ou mais acessos simultaneamente. <br>        |
+|Critério de Êxito | - A aplicação não caiu durante o teste. |
+
+| **Caso de Teste** 	| **CT-06 - Tempo de Resposta** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RNF-006: O sistema não deve ter tempo médio de resposta superior a 5s. |
+| Objetivo do Teste 	| Verificar se a aplicação ultrapassa o tempo de resposta desejado. |
+| Passos 	| - Acessar a aplicação - Realizar varias ações como: acessar o perfil, visualizar receita, pesquisar uma receita. |
+|Critério de Êxito |  O tempo de Resposta não deve ser superior a 5s em cada pagina. |
 
 | **Caso de Teste** 	| **CT-08 – Testar em diferentes navegadores** 	|
 |:---:	|:---:	|
