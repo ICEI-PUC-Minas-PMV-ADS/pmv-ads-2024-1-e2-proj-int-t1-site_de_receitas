@@ -11,7 +11,9 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e  muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade no design do wireframe interativo que será desenvolvido logo em seguida.
 
+- [Diagrama de Fluxo Autenticar](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t1-site_de_receitas/blob/main/docs/img/Login-Diagrama.png)
 ![Diagrama de Fluxo Autenticar](img/Login-Diagrama.png)
+- [Diagrama de Fluxo Autenticado]([docs/img/Logado-Diagrama.png](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t1-site_de_receitas/blob/main/docs/img/Logado-Diagrama.png))
 ![Diagrama de Fluxo Autenticado](img/Logado-Diagrama.png)
 
 ## Wireframes
