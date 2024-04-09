@@ -93,6 +93,20 @@ Por exemplo:
 
 ## Plano de Testes dos Requisitos Não Funcionais
 
+| **Caso de Teste** 	| **CT-01 Privacidade de dados** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RNF-001: O sistema não deve expor dados sensíveis do usuário |
+| Objetivo do Teste 	| Garantir a segurança dos dados sensíveis do usuário |
+| Passos 	| O usuário pode ou não estar logado <br>- Navegar até uma receita<br>- Selecionar o autor<br>- Verificar os dados disponíveis sobre o autor        |
+|Critério de Êxito | Apenas o nome de usuário do autor deve estar disponível para visualização |
+
+| **Caso de Teste** 	| **CT-02- Arquitetura MVC** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RNF-002: O sistema deve ser desenvolvido utilizando a arquitetura MVC |
+| Objetivo do Teste 	| Verificar se a aplicação foi desenvolvida utilizando a arquitetura MVC |
+| Passos 	| - Revisar código para verificar se todos os módulos correspondem à arquitetura MVC        |
+|Critério de Êxito | Devem existir separações claras entre as camadas Model, View e Controller |
+
 | **Caso de Teste** 	| **CT-03 - Framework de desenvolvimento** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RNF-003: O sistema deve ser desenvolvido utilizando o framework ASP.NET Core MVC. |
@@ -118,7 +132,7 @@ Por exemplo:
 |:---:	|:---:	|
 |	Requisito Associado 	| RNF-006: O sistema não deve ter tempo médio de resposta superior a 5s. |
 | Objetivo do Teste 	| Verificar se a aplicação ultrapassa o tempo de resposta desejado. |
-| Passos 	| - Acessar a aplicação - Realizar varias ações como: acessar o perfil, visualizar receita, pesquisar uma receita. |
+| Passos 	| - Acessar a aplicação <br>- Realizar varias ações como: acessar o perfil, visualizar receita, pesquisar uma receita. |
 |Critério de Êxito |  O tempo de Resposta não deve ser superior a 5s em cada pagina. |
 
 | **Caso de Teste** 	| **CT-07 - Clean Code** 	|
