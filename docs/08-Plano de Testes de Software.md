@@ -71,16 +71,16 @@ Por exemplo:
 | **Caso de Teste** 	| **CT-07 - Clean Code** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RFN - 007: O sistema deve ser desenvolvido utilizando práticas recomendadas de clean code. |
-| Objetivo do Teste 	| Verificar se a aplicação ultrapassa o tempo de resposta desejado. |
-| Passos 	| - Acessar a aplicação - Realizar varias ações como: acessar o perfil, visualizar receita, pesquisar uma receita. |
-|Critério de Êxito |  O tempo de Resposta não deve ser superior a 5s em cada pagina. |
+| Objetivo do Teste 	| Garantir que o sistema desenvolvido siga práticas recomendadas de clean code. |
+| Passos 	| - Analisar o código-fonte para identificar possíveis violações às práticas de clean code, como duplicação de código, funções muito longas, nomes de variáveis confusos, etc. |
+|Critério de Êxito |  Ausência de violações graves de clean code. |
 
 | **Caso de Teste** 	| **CT-08 – Testar em diferentes navegadores** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RNF-008 - O sistema deve ser executado nos navegadores Google Chrome, Opera e Edge. |
-| Objetivo do Teste 	| Garantir que o sistema desenvolvido siga práticas recomendadas de clean code. |
-| Passos 	| - Analisar o código-fonte para identificar possíveis violações às práticas de clean code, como duplicação de código, funções muito longas, nomes de variáveis confusos, etc. <br>        |
-|Critério de Êxito | - Ausência de violações graves de clean code. |
+| Objetivo do Teste 	| verificar se o sistema executa corretamente nos navegadores Google Chrome, Opera e Edge. |
+| Passos 	| - Acessar o sistema utilizando os navegadores Google Chrome, Opera e Edge <br> - Verificar se todas as funcionalidades estão disponíveis e funcionam corretamente em cada navegador <br>        |
+|Critério de Êxito | - O sistema funciona em todos os navegadores testados. |
 
 | **Caso de Teste** 	| **CT-09 – Avaliar a Expansividade** 	|
 |:---:	|:---:	|
