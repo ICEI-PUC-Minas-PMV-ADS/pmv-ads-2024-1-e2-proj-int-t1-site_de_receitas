@@ -64,7 +64,7 @@ Por exemplo:
 |	Requisito Associado 	| RF-008: O sistema deve permitir que o usuário exclua seu perfil |
 | Objetivo do Teste 	| Verificar a funcionalidade de exclusão de perfil. |
 | Passos 	| - Acessar página de perfil. <br> -  Clicar em "Excluir conta". <br> - Verificar existência de mensagem de aviso sobre o sucesso na exclusão. <br> - Verificar se houve o redirecionamento à tela de login. <br> -Verificar se, preenchendo o formulário com os dados da conta excluída, as credenciais não são reconhecidas. <br>|
-|Critério de Êxito | - Redirecionamento à tela de login e credenciais de conta excluída não são mais reconhecidas pelo sistema. |
+|Critério de Êxito | - Credenciais de conta excluída não são mais reconhecidas pelo sistema. |
 
 ## Plano de Testes dos Requisitos Não Funcionais
 
