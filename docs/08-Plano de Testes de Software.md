@@ -55,7 +55,7 @@ Por exemplo:
 | **Caso de Teste** 	| **CT-07 – Desfazer avaliação de receita** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-007: O sistema deve permitir que o usuário desfaça sua avaliação |
-| Objetivo do Teste 	| Verificar a função de desfazer avalição de uma receita. |
+| Objetivo do Teste 	| Verificar a função de desfazer avaliação de uma receita. |
 | Passos 	| - Acessar página de uma receita específica. <br> -  Verificar a existência da avaliação feita. <br> - Clicar no botão de desfazer avaliação. <br> - Verificar se a avaliação feita não existe mais. <br>  - Verificar a aparição de mensagem avisando que a avaliação foi desfeita com sucesso. <br> |
 |Critério de Êxito | - A avaliação feita  não é mais apresentada, mesmo após revisitar a página da receita. |
 
@@ -67,10 +67,25 @@ Por exemplo:
 |Critério de Êxito | - Redirecionamento à tela de login e credenciais de conta excluída não são mais reconhecidas pelo sistema. |
 
 ## Plano de Testes dos Requisitos Não Funcionais
+
+| **Caso de Teste** 	| **CT-03 - Framework de desenvolvimento** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RNF-003: O sistema deve ser desenvolvido utilizando o framework ASP.NET Core MVC. |
+| Objetivo do Teste 	| Verificar se a aplicação foi desenvolvida inteiramente com framework ASP.NET Core MVC. |
+| Passos 	| - Revisar código para verificar se todos os módulos correspondem à arquitetura MVC e se utilizam do framework ASP.NET Core MVC. <br>        |
+|Critério de Êxito | - Ausência de implementação de demais frameworks que não correspondem ao framework ASP.NET Core MVC. |
+
+| **Caso de Teste** 	| **CT-04 - Sistema Multiusuário** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RNF-004: O sistema deve ser capaz de lidar com vários usuários simultâneos sem sofrer degradações significativas no desempenho. |
+| Objetivo do Teste 	| Verificar se a aplicação suporta múltiplos usuários sem diminuição significativa de desempenho. |
+| Passos 	| - Acessar a aplicação por 2 ou mais acessos simultaneamente. <br>        |
+|Critério de Êxito | - A aplicação não apresentou lentidão ou travamentos no carregamento das páginas e nas respostas às ações dos usuários durante o teste. |
+
 | **Caso de Teste** 	| **CT-05 - Sistema Multiusuário** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RNF-005: O sistema deve suportar múltiplos usuários simultaneamente. |
-| Objetivo do Teste 	| Verificar se a aplicaçãosuporta múltiplos usuários. |
+| Objetivo do Teste 	| Verificar se a aplicação suporta múltiplos usuários. |
 | Passos 	| - Acessar a aplicação por 2 ou mais acessos simultaneamente. <br>        |
 |Critério de Êxito | - A aplicação não caiu durante o teste. |
 
