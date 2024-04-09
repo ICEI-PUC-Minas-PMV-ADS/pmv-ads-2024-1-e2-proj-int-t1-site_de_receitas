@@ -13,14 +13,14 @@ Por exemplo:
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-001: O sistema deve permitir que o usuário se cadastre. |
 | Objetivo do Teste 	| Verificar a função de cadastrar usuários. |
-| Passos 	| - Acessar a página de cadastro de usuário - Adicionar nome de usuário, e-mail e confirmar senha         - Autenticar usuário cadastrado com e-mail e senha.
+| Passos 	| - Acessar a página de cadastro de usuário <br> - Adicionar nome de usuário, e-mail e confirmar senha       <br>  - Autenticar usuário cadastrado com e-mail e senha.
 |Critério de Êxito | -  Será exibido na tela "O usuário foi cadastrado com sucesso". |
  
 | **Caso de Teste** 	| **CT-02 - Cadastro de receitas** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-002: O sistema deve permitir que o usuário cadastre novas receitas com o nome dessas receitas e seus respectivos ingredientes e modos de preparo. |
 | Objetivo do Teste 	| Verificar a função de cadastrar uma receita, ingredientes e seu modo de preparo. |
-| Passos 	| - Ser um usuário cadastrado - Acessar a tela de criação de receita - Adicionar as informações: Nome da receita, Ingredientes, modo de preparo e tempo médio de preparo - Salvar a receita - Fazer uma busca pela receita criada. <br>  |
+| Passos 	| - Ser um usuário cadastrado <br>- Acessar a tela de criação de receita <br>- Adicionar as informações: Nome da receita, Ingredientes, modo de preparo e tempo médio de preparo <br>- Salvar a receita <br>- Fazer uma busca pela receita criada. <br>  |
 |Critério de Êxito |  A receita foi cadastrada com sucesso. |
 
 
@@ -65,6 +65,31 @@ Por exemplo:
 | Objetivo do Teste 	| Verificar a funcionalidade de exclusão de perfil. |
 | Passos 	| - Acessar página de perfil. <br> -  Clicar em "Excluir conta". <br> - Verificar existência de mensagem de aviso sobre o sucesso na exclusão. <br> - Verificar se houve o redirecionamento à tela de login. <br> -Verificar se, preenchendo o formulário com os dados da conta excluída, as credenciais não são reconhecidas. <br>|
 |Critério de Êxito | - Credenciais de conta excluída não são mais reconhecidas pelo sistema. |
+
+| **Caso de Teste** 	| **CT-09 - Lista de Receitas de autoria do Usuário** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-009: O sistema deve fornecer ao usuário uma lista com todas as receitas já cadastradas por ele |
+| Objetivo do Teste 	| Confirmar a visualização das receitas criadas pelo usuário |
+| Passos 	| Usuário deve estar logado <br> - Navegar até: [Nome Usuário] > Minhas Receitas |
+| Critério de Êxito | A lista de receitas cadastradas pelo usuário deve ser exibida |
+
+| **Caso de Teste** 	| **CT-10.1 Exclusão** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-010: O sistema deve permitir que usuário exclua receitas por ele cadastradas |
+| Objetivo do Teste 	| Confirmar a exclusão da receita |
+| Passos 	| O usuário deve estar logado <br> - Navegar até: [Nome Usuário] > Minhas receitas <br> - Selecionar receita a ser excluída e clicar em excluir <br> - Confirmar que deseja excluir <br> - Navegar até: [Nome Usuário] > Minhas receitas |
+| Critério de Êxito | A receita não deve mais constar na listagem após a exclusão |
+
+| **Caso de Teste** 	| **CT-10.2 Confirmação da autoria para exclusão** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-010: O sistema deve permitir que usuário exclua receitas por ele cadastradas |
+| Objetivo do Teste 	| Confirmar que apenas o autor da receita é capaz de exclui-la |
+| Passos 	| O usuário pode ou não estar logado <br> - Na página inicial, selecionar uma receita que não seja de autoria do usuário |
+| Critério de Êxito | A opção de exclusão não deve estar disponível para o usuário não autor |
+
+
+------------------
+
 
 ## Plano de Testes dos Requisitos Não Funcionais
 
