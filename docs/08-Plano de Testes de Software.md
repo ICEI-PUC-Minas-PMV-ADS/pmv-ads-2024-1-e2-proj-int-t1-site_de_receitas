@@ -38,6 +38,19 @@ Por exemplo:
 | Passos 	| - Acessar a página de pesquisa de receitas <br> -  Inserir um nome de receita ou ingrediente na barra de pesquisa <br> - Verificar se as receitas relevantes são exibidas nos resultados da pesquisa <br>  |
 |Critério de Êxito | - o nome da receita ou ingredientes digitados retornam as receitas salvas no banco de dados. |
 
+| **Caso de Teste** 	| **CT-05 – Edição de receitas** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-005: O sistema deve permitir que o usuário edite receitas já cadastradas. |
+| Objetivo do Teste 	| Verificar a função de editar uma receita, ingredientes e seu modo de preparo. |
+| Passos 	| - Ser um usuário cadastrado. <br> -  Acessar a tela de visulizar receita cadastradas. <br> - Alterar as informações: Nome da receita, Ingredientes, modo de preparo e tempo médio de preparo. <br> - Salvar a receita. <br> - Aceesar tela de receitas cadastradas. <br>  |
+|Critério de Êxito | -  A receita foi editada com sucesso. |
+
+| **Caso de Teste** 	| **CT-06 – Edição de Usuário** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-006: O sistema deve permitir que o usuário edite seus próprios dados |
+| Objetivo do Teste 	| Verificar a função de editar dados do usuário. |
+| Passos 	| - Ser um usuário cadastrado. <br> -  Acessar a tela de editar perfil. <br> - Alterar as informações: nome, e-mail, senha e especificação culinaria. <br> - Salvar usuário. <br> - Aceesar tela perfil do usuário. <br>  |
+|Critério de Êxito | -   Usuário foi editado com sucesso. |
 
 
 ## Plano de Testes dos Requisitos Não Funcionais
@@ -55,12 +68,19 @@ Por exemplo:
 | Passos 	| - Acessar a aplicação - Realizar varias ações como: acessar o perfil, visualizar receita, pesquisar uma receita. |
 |Critério de Êxito |  O tempo de Resposta não deve ser superior a 5s em cada pagina. |
 
+| **Caso de Teste** 	| **CT-07 - Clean Code** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RFN - 007: O sistema deve ser desenvolvido utilizando práticas recomendadas de clean code. |
+| Objetivo do Teste 	| Verificar se a aplicação ultrapassa o tempo de resposta desejado. |
+| Passos 	| - Acessar a aplicação - Realizar varias ações como: acessar o perfil, visualizar receita, pesquisar uma receita. |
+|Critério de Êxito |  O tempo de Resposta não deve ser superior a 5s em cada pagina. |
+
 | **Caso de Teste** 	| **CT-08 – Testar em diferentes navegadores** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RNF-008 - O sistema deve ser executado nos navegadores Google Chrome, Opera e Edge. |
-| Objetivo do Teste 	| verificar se o sistema executa corretamente nos navegadores Google Chrome, Opera e Edge. |
-| Passos 	| - Acessar o sistema utilizando os navegadores Google Chrome, Opera e Edge <br> - Verificar se todas as funcionalidades estão disponíveis e funcionam corretamente em cada navegador <br>        |
-|Critério de Êxito | - O sistema funciona em todos os navegadores testados. |
+| Objetivo do Teste 	| Garantir que o sistema desenvolvido siga práticas recomendadas de clean code. |
+| Passos 	| - Analisar o código-fonte para identificar possíveis violações às práticas de clean code, como duplicação de código, funções muito longas, nomes de variáveis confusos, etc. <br>        |
+|Critério de Êxito | - Ausência de violações graves de clean code. |
 
 | **Caso de Teste** 	| **CT-09 – Avaliar a Expansividade** 	|
 |:---:	|:---:	|
@@ -68,6 +88,13 @@ Por exemplo:
 | Objetivo do Teste 	| verificar a expansividade do sistema. |
 | Passos 	| - Analisar a estrutura do sistema para verificar se é modular e permite a adição de novas funcionalidades sem alterar o código existente <br> - Testar a adição de novas funcionalidades e verificar se o sistema continua funcionando corretamente. |
 |Critério de Êxito | - O sistema funciona corretamente mesmo após a adição de novas funcionalidades. |
+
+| **Caso de Teste** 	| **CT-10 – Tempo de Resposta** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RFN - 010: O sistema deve continuar funcionando apresentando conteúdo já carregado em caso de queda de conexão ou instabilidade no banco de dados. |
+| Objetivo do Teste 	| Verificar se a aplicação apresenta o conteúdo já carregado. |
+| Passos 	| - Acessar a aplicação e conseguir visualizar telas anteriormentes acessadas. |
+|Critério de Êxito | -  A aplicação conseguiu exibir as telas acessadas anteriormente durante o teste. |
 
  
 > **Links Úteis**:
