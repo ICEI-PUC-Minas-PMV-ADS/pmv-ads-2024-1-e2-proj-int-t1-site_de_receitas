@@ -52,6 +52,19 @@ Por exemplo:
 | Passos 	| - Ser um usuário cadastrado. <br> -  Acessar a tela de editar perfil. <br> - Alterar as informações: nome, e-mail, senha e especificação culinaria. <br> - Salvar usuário. <br> - Aceesar tela perfil do usuário. <br>  |
 |Critério de Êxito | -   Usuário foi editado com sucesso. |
 
+| **Caso de Teste** 	| **CT-07 – Desfazer avaliação de receita** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-007: O sistema deve permitir que o usuário desfaça sua avaliação |
+| Objetivo do Teste 	| Verificar a função de desfazer avalição de uma receita. |
+| Passos 	| - Acessar página de uma receita específica. <br> -  Verificar a existência da avaliação feita. <br> - Clicar no botão de desfazer avaliação. <br> - Verificar se a avaliação feita não existe mais. <br>  - Verificar a aparição de mensagem avisando que a avaliação foi desfeita com sucesso. <br> |
+|Critério de Êxito | - A avaliação feita  não é mais apresentada, mesmo após revisitar a página da receita. |
+
+| **Caso de Teste** 	| **CT-08 – Exclusão de perfil** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-008: O sistema deve permitir que o usuário exclua seu perfil |
+| Objetivo do Teste 	| Verificar a funcionalidade de exclusão de perfil. |
+| Passos 	| - Acessar página de perfil. <br> -  Clicar em "Excluir conta". <br> - Verificar existência de mensagem de aviso sobre o sucesso na exclusão. <br> - Verificar se houve o redirecionamento à tela de login. <br> -Verificar se, preenchendo o formulário com os dados da conta excluída, as credenciais não são reconhecidas. <br>|
+|Critério de Êxito | - Redirecionamento à tela de login e credenciais de conta excluída não são mais reconhecidas pelo sistema. |
 
 ## Plano de Testes dos Requisitos Não Funcionais
 | **Caso de Teste** 	| **CT-05 - Sistema Multiusuário** 	|
