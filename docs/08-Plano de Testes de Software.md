@@ -149,14 +149,8 @@ Por exemplo:
 | Passos 	| - Acessar o sistema utilizando os navegadores Google Chrome, Opera e Edge <br> - Verificar se todas as funcionalidades estão disponíveis e funcionam corretamente em cada navegador <br>        |
 |Critério de Êxito | - O sistema funciona em todos os navegadores testados. |
 
-| **Caso de Teste** 	| **CT-09 – Avaliar a Expansividade** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RNF-009 - O sistema deve ser expansivo. |
-| Objetivo do Teste 	| verificar a expansividade do sistema. |
-| Passos 	| - Analisar a estrutura do sistema para verificar se é modular e permite a adição de novas funcionalidades sem alterar o código existente <br> - Testar a adição de novas funcionalidades e verificar se o sistema continua funcionando corretamente. |
-|Critério de Êxito | - O sistema funciona corretamente mesmo após a adição de novas funcionalidades. |
 
-| **Caso de Teste** 	| **CT-10 – Tempo de Resposta** 	|
+| **Caso de Teste** 	| **CT-09 – Tempo de Resposta** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RFN - 010: O sistema deve continuar funcionando apresentando conteúdo já carregado em caso de queda de conexão ou instabilidade no banco de dados. |
 | Objetivo do Teste 	| Verificar se a aplicação apresenta o conteúdo já carregado. |
