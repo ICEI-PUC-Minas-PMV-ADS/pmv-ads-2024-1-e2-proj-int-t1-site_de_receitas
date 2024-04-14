@@ -149,8 +149,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-006| O sistema não deve ter tempo médio de resposta superior a 5s | Média |
 |RNF-007| O sistema deve ser desenvolvido utilizando práticas recomendadas de clean code | Média |
 |RNF-008| O sistema deve ser executado nos navegadores Google Chrome, Opera e Edge | Média
-|RNF-009| O sistema deve ser expansivo | Média |
-|RNF-010| O sistema deve continuar funcionando apresentando conteúdo já carregado em caso de queda de conexão ou instabilidade no banco de dados | Média |
+|RNF-009| O sistema deve continuar funcionando apresentando conteúdo já carregado em caso de queda de conexão ou instabilidade no banco de dados | Média |
 
 ------
 
