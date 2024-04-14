@@ -39,8 +39,12 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema 
 ![Wireframe - Tela Inicial](img/WireframeTelaInicial.png)
 
 ### Tela Detalhes da Receita
-- [Tela Detalhes da Receita](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t1-site_de_receitas/blob/main/docs/img/DetalhesReceita.png)
-![Wireframe - Tela Detalhes da Receita](img/DetalhesReceita.png)
+- [Tela Detalhes da Receita](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t1-site_de_receitas/blob/main/docs/img/WireframeDetalhesReceita.png)
+![Wireframe - Tela Detalhes da Receita](img/WireframeDetalhesReceita.png)
+
+### Tela Cadastro da Receita
+- [Tela Cadastro da Receita](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t1-site_de_receitas/blob/main/docs/img/WireframeCadastroReceita.png)
+![Wireframe - Tela Detalhes da Receita](img/WireframeCadastroReceita.png)
 
  
 > **Links Úteis**:
