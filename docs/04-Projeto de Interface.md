@@ -37,6 +37,11 @@ O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema 
 ### Tela Inicial
 - [Diagrama de Fluxo Autenticar](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t1-site_de_receitas/blob/main/docs/img/WireframeTelaInicial.png)
 ![Wireframe - Tela Inicial](img/WireframeTelaInicial.png)
+
+### Tela Detalhes da Receita
+- [Tela Detalhes da Receita](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t1-site_de_receitas/blob/main/docs/img/DetalhesReceita.png)
+![Wireframe - Tela Detalhes da Receita](img/DetalhesReceita.png)
+
  
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
