@@ -73,19 +73,12 @@ Por exemplo:
 | Passos 	| Usuário deve estar logado <br> - Navegar até: [Nome Usuário] > Minhas Receitas |
 | Critério de Êxito | A lista de receitas cadastradas pelo usuário deve ser exibida |
 
-| **Caso de Teste** 	| **CT-10.1 Exclusão** 	|
+| **Caso de Teste** 	| **CT-10 Exclusão** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-010: O sistema deve permitir que usuário exclua receitas por ele cadastradas |
 | Objetivo do Teste 	| Confirmar a exclusão da receita |
 | Passos 	| O usuário deve estar logado <br> - Navegar até: [Nome Usuário] > Minhas receitas <br> - Selecionar receita a ser excluída e clicar em excluir <br> - Confirmar que deseja excluir <br> - Navegar até: [Nome Usuário] > Minhas receitas |
 | Critério de Êxito | A receita não deve mais constar na listagem após a exclusão |
-
-| **Caso de Teste** 	| **CT-10.2 Confirmação da autoria para exclusão** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-010: O sistema deve permitir que usuário exclua receitas por ele cadastradas |
-| Objetivo do Teste 	| Confirmar que apenas o autor da receita é capaz de exclui-la |
-| Passos 	| O usuário pode ou não estar logado <br> - Na página inicial, selecionar uma receita que não seja de autoria do usuário |
-| Critério de Êxito | A opção de exclusão não deve estar disponível para o usuário não autor |
 
 
 ------------------
