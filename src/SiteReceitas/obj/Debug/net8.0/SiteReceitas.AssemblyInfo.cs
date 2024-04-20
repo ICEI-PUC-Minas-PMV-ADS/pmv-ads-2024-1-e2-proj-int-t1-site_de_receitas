@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SiteReceitas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+006381ed426b8574cf3508c48c14a05d6d505f11")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4589b57892340dd782a05ba04d1c5da66ce104da")]
 [assembly: System.Reflection.AssemblyProductAttribute("SiteReceitas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SiteReceitas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

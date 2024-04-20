@@ -14,7 +14,7 @@ build_property.EnableComHosting =
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Isabela\Documents\GitHub\pmv-ads-2024-1-e2-proj-int-t1-site_de_receitas\src\SiteReceitas
 build_property._RazorSourceGeneratorDebug = 
 
