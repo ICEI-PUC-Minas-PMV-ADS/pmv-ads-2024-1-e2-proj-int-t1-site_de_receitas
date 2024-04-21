@@ -6,7 +6,7 @@ namespace SiteReceitas.Models
     public class Receita //Não coloquei [Table] pq a pluralização deve funcionar
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] //o banco deve gerar a ID automaticamente (considerando tirar pq já deu problema
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] //Geração automática de Id pelo banco (considerando tirar pq já deu problema)
         public int IdReceita { get; set; } //Não coloquei [Key] por ser ID, se for fazer alguma PK sem ID no nome lembrar de colocar
         
         [Required(ErrorMessage = "Obrigatório informar o nome da receita!")]

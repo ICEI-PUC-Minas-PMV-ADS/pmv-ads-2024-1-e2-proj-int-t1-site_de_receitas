@@ -6,7 +6,7 @@ namespace SiteReceitas.Models
     public class Ingrediente_Receita
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] //o banco deve gerar a ID automaticamente (considerando tirar pq já deu problema
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] //Geração automática de Id pelo banco (considerando tirar pq já deu problema)
         public int IdIngredienteReceita { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o nome do ingrediente!")]
@@ -17,9 +17,9 @@ namespace SiteReceitas.Models
         public int IdReceita { get; set; }
         public Receita Receita { get; set; }
 
-        /*Descomentar quando colocar ingrediente
+
         //FK Ingrediente
         public int IdIngrediente { get; set; }
-        public Ingrediente Ingrediente { get; set; }*/
+        public Ingrediente Ingrediente { get; set; }
     }
 }
