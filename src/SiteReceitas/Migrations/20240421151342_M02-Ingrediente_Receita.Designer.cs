@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SiteReceitas.Models;
 
@@ -11,9 +12,11 @@ using SiteReceitas.Models;
 namespace SiteReceitas.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    partial class AppDBContextModelSnapshot : ModelSnapshot
+    [Migration("20240421151342_M02-Ingrediente_Receita")]
+    partial class M02Ingrediente_Receita
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -67,35 +70,6 @@ namespace SiteReceitas.Migrations
                     b.ToTable("Receitas");
                 });
 
-<<<<<<< Updated upstream
-            modelBuilder.Entity("SiteReceitas.Models.Usuario", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Senha")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("SobreNome")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Usuarios");
-=======
             modelBuilder.Entity("SiteReceitas.Models.Ingrediente_Receita", b =>
                 {
                     b.HasOne("SiteReceitas.Models.Receita", "Receita")
@@ -108,7 +82,6 @@ namespace SiteReceitas.Migrations
             modelBuilder.Entity("SiteReceitas.Models.Receita", b =>
                 {
                     b.Navigation("Ingredientes_Receita");
->>>>>>> Stashed changes
                 });
 #pragma warning restore 612, 618
         }

@@ -12,6 +12,6 @@ namespace SiteReceitas.Models
         public DbSet<Usuario> Usuarios { get; set; }
 
         public DbSet<Receita> Receitas { get; set; }
-        //public DbSet<IngredienteReceita> IngredientesReceita { get; set; }
+        public DbSet<Ingrediente_Receita> Ingredientes_Receita { get; set; }
     }
 }
