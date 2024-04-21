@@ -31,4 +31,9 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+app.MapControllerRoute(
+    name: "aleatorio",
+    pattern: "{controller=Usuario}/{action=Index}/{id?}");
+
+
 app.Run();

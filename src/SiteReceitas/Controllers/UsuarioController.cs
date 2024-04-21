@@ -12,7 +12,7 @@ namespace SiteReceitas.Controllers
             _context = context;
         }
 
-        public IActionResult INdex()
+        public IActionResult Index()
         {
             return View();
         }
