@@ -7,8 +7,10 @@ namespace SiteReceitas.Models
         public AppDBContext(DbContextOptions<AppDBContext> options) : base(options) { }
 
         // TIRAR os // conforme cada classe for criada
-        //public DbSet<Usuario> Usuarios { get; set; }
         //public DbSet<Ingrediente> Ingredientes { get; set; }
+
+        public DbSet<Usuario> Usuarios { get; set; }
+
         public DbSet<Receita> Receitas { get; set; }
         //public DbSet<IngredienteReceita> IngredientesReceita { get; set; }
     }
