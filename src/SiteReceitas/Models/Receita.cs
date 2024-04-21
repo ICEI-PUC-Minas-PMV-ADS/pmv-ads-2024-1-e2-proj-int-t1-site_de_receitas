@@ -16,9 +16,10 @@ namespace SiteReceitas.Models
         [Required(ErrorMessage = "Obrigatório informar o modo de preparo!")]  
         public string ModoPreparo { get; set; }
 
+        /* Descomentar essa parte quando colocar Ingrediente_Receita
         // Relacionamento 1:N com Ingrediente_Receita (Receita pode ter vários ingredientes_receita, mas cada ingrediente_receita pertence a apenas uma receita)
-        public List<Ingrediente_Receita> Ingredientes_Receita { get; set; }
-
+        public List<IngredienteReceita> IngredientesReceita { get; set; }
+        */
 
         /* Descomentar essa parte quando colocarem o usuário e revisar para ver como vai caber aqui
          * // FK IdUsuario
