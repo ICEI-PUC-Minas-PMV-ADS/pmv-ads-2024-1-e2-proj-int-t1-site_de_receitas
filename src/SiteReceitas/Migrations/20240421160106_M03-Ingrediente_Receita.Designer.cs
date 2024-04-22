@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SiteReceitas.Models;
 
@@ -11,9 +12,11 @@ using SiteReceitas.Models;
 namespace SiteReceitas.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    partial class AppDBContextModelSnapshot : ModelSnapshot
+    [Migration("20240421160106_M03-Ingrediente_Receita")]
+    partial class M03Ingrediente_Receita
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,27 +24,6 @@ namespace SiteReceitas.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("SiteReceitas.Models.Ingrediente", b =>
-                {
-                    b.Property<int>("IdIngrediente")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdIngrediente"));
-
-                    b.Property<string>("NomeIngrediente")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UnidadeMedida")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("IdIngrediente");
-
-                    b.ToTable("Ingredientes");
-                });
 
             modelBuilder.Entity("SiteReceitas.Models.Ingrediente_Receita", b =>
                 {
@@ -51,13 +33,7 @@ namespace SiteReceitas.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdIngredienteReceita"));
 
-                    b.Property<int>("IdIngrediente")
-                        .HasColumnType("int");
-
                     b.Property<int>("IdReceita")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("IngredienteIdIngrediente")
                         .HasColumnType("int");
 
                     b.Property<int>("QuantidadeIngrediente")
@@ -67,8 +43,6 @@ namespace SiteReceitas.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("IdIngredienteReceita");
-
-                    b.HasIndex("IngredienteIdIngrediente");
 
                     b.HasIndex("ReceitaIdReceita");
 
@@ -83,9 +57,6 @@ namespace SiteReceitas.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdReceita"));
 
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
-
                     b.Property<string>("ModoPreparo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -94,12 +65,7 @@ namespace SiteReceitas.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("UsuarioId")
-                        .HasColumnType("int");
-
                     b.HasKey("IdReceita");
-
-                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Receitas");
                 });
@@ -135,31 +101,11 @@ namespace SiteReceitas.Migrations
 
             modelBuilder.Entity("SiteReceitas.Models.Ingrediente_Receita", b =>
                 {
-                    b.HasOne("SiteReceitas.Models.Ingrediente", "Ingrediente")
-                        .WithMany("IngredientesReceita")
-                        .HasForeignKey("IngredienteIdIngrediente");
-
                     b.HasOne("SiteReceitas.Models.Receita", "Receita")
                         .WithMany("IngredientesReceita")
                         .HasForeignKey("ReceitaIdReceita");
 
-                    b.Navigation("Ingrediente");
-
                     b.Navigation("Receita");
-                });
-
-            modelBuilder.Entity("SiteReceitas.Models.Receita", b =>
-                {
-                    b.HasOne("SiteReceitas.Models.Usuario", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("UsuarioId");
-
-                    b.Navigation("Usuario");
-                });
-
-            modelBuilder.Entity("SiteReceitas.Models.Ingrediente", b =>
-                {
-                    b.Navigation("IngredientesReceita");
                 });
 
             modelBuilder.Entity("SiteReceitas.Models.Receita", b =>
