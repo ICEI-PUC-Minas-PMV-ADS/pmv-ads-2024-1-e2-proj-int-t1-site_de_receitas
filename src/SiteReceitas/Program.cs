@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileSystemGlobbing.Internal;
 using SiteReceitas.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,5 +31,11 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "users",
+    pattern: "{controller=Usuario}/{action=Index}"
+    );
+
 
 app.Run();

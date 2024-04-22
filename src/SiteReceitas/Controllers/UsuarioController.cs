@@ -12,7 +12,7 @@ namespace SiteReceitas.Controllers
             _context = context;
         }
 
-        public IActionResult INdex()
+        public IActionResult Index()
         {
             return View();
         }
@@ -34,5 +34,39 @@ namespace SiteReceitas.Controllers
 
             return View(usuario);
         }
+
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var user = await _context.Usuarios.FindAsync(id);
+
+            return View(user);
+        }
+
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var userData = await _context.Usuarios.FindAsync(id);
+
+            if (userData == null)
+            {
+                return NotFound();
+            }
+
+             _context.Usuarios.Remove(userData);
+            await _context.SaveChangesAsync();
+
+            return View(userData);
+        }
+
+
     }
 }
