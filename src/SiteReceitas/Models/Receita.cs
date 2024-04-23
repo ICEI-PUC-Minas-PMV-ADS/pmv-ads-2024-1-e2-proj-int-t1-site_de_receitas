@@ -15,5 +15,7 @@ namespace SiteReceitas.Models
 
         [Required(ErrorMessage = "Obrigatório informar o modo de preparo!")]
         public string ModoPreparo { get; set; }
+
+        public ICollection<Ingrediente> Ingredientes { get; set; }
     }
 }
