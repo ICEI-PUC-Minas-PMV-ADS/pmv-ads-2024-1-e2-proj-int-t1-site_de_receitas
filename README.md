@@ -15,6 +15,7 @@ O projeto em desenvolvimento tem como objetivo principal ampliar o conhecimento 
 * Bernardo Alves Sirqueira
 * Isabela Gontijo de Castro
 * Lorrayne Victoria Caliari Machado
+* Matheus Reis Castelliano
 
 ## Orientador
 
