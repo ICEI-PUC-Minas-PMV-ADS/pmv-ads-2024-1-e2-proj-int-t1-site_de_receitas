@@ -33,17 +33,7 @@ namespace SiteReceitas.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ReceitaId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UnidadeMedida")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("ReceitaId")
-                        .IsUnique();
 
                     b.ToTable("Ingredientes");
                 });
@@ -69,22 +59,19 @@ namespace SiteReceitas.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("IngredienteId");
+
                     b.ToTable("Receitas");
-                });
-
-            modelBuilder.Entity("SiteReceitas.Models.Ingrediente", b =>
-                {
-                    b.HasOne("SiteReceitas.Models.Receita", "Receita")
-                        .WithOne("Ingrediente")
-                        .HasForeignKey("SiteReceitas.Models.Ingrediente", "ReceitaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Receita");
                 });
 
             modelBuilder.Entity("SiteReceitas.Models.Receita", b =>
                 {
+                    b.HasOne("SiteReceitas.Models.Ingrediente", "Ingrediente")
+                        .WithMany()
+                        .HasForeignKey("IngredienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Ingrediente");
                 });
 #pragma warning restore 612, 618

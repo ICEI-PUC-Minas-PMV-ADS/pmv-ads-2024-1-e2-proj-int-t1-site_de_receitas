@@ -21,7 +21,7 @@ namespace SiteReceitas.Controllers
         // GET: Receitas
         public async Task<IActionResult> Index()
         {
-            var appDBContext = _context.Receita.Include(i => i.Ingrediente);
+            var appDBContext = _context.Receita.Include(r => r.Ingrediente);
             return View(await appDBContext.ToListAsync());
         }
 
@@ -34,7 +34,7 @@ namespace SiteReceitas.Controllers
             }
 
             var receita = await _context.Receita
-                .Include(i => i.Ingrediente)
+                .Include(r => r.Ingrediente)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (receita == null)
             {
@@ -130,7 +130,7 @@ namespace SiteReceitas.Controllers
             }
 
             var receita = await _context.Receita
-                .Include(i => i.Ingrediente)
+                .Include(r => r.Ingrediente)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (receita == null)
             {

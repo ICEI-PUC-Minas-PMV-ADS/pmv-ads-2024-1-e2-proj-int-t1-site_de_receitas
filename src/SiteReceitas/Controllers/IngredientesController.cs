@@ -21,8 +21,7 @@ namespace SiteReceitas.Controllers
         // GET: Ingredientes
         public async Task<IActionResult> Index()
         {
-            var appDBContext = _context.Ingrediente.Include(i => i.Receita);
-            return View(await appDBContext.ToListAsync());
+            return View(await _context.Ingrediente.ToListAsync());
         }
 
         // GET: Ingredientes/Details/5
@@ -34,7 +33,6 @@ namespace SiteReceitas.Controllers
             }
 
             var ingrediente = await _context.Ingrediente
-                .Include(i => i.Receita)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (ingrediente == null)
             {
@@ -47,7 +45,6 @@ namespace SiteReceitas.Controllers
         // GET: Ingredientes/Create
         public IActionResult Create()
         {
-            ViewData["ReceitaId"] = new SelectList(_context.Receita, "Id", "NomeReceita");
             return View();
         }
 
@@ -56,7 +53,7 @@ namespace SiteReceitas.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,NomeIngrediente,UnidadeMedida,ReceitaId")] Ingrediente ingrediente)
+        public async Task<IActionResult> Create([Bind("Id,NomeIngrediente")] Ingrediente ingrediente)
         {
             if (ModelState.IsValid)
             {
@@ -64,7 +61,6 @@ namespace SiteReceitas.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ReceitaId"] = new SelectList(_context.Receita, "Id", "NomeReceita", ingrediente.ReceitaId);
             return View(ingrediente);
         }
 
@@ -81,7 +77,6 @@ namespace SiteReceitas.Controllers
             {
                 return NotFound();
             }
-            ViewData["ReceitaId"] = new SelectList(_context.Receita, "Id", "NomeReceita", ingrediente.ReceitaId);
             return View(ingrediente);
         }
 
@@ -90,7 +85,7 @@ namespace SiteReceitas.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,NomeIngrediente,UnidadeMedida,ReceitaId")] Ingrediente ingrediente)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,NomeIngrediente")] Ingrediente ingrediente)
         {
             if (id != ingrediente.Id)
             {
@@ -117,7 +112,6 @@ namespace SiteReceitas.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ReceitaId"] = new SelectList(_context.Receita, "Id", "NomeReceita", ingrediente.ReceitaId);
             return View(ingrediente);
         }
 
@@ -130,7 +124,6 @@ namespace SiteReceitas.Controllers
             }
 
             var ingrediente = await _context.Ingrediente
-                .Include(i => i.Receita)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (ingrediente == null)
             {
