@@ -28,4 +28,9 @@ namespace SiteReceitas.Models
         [Display(Name = "Senha")]
         public string Senha { get; set; }
     }
+
+    public enum Perfil{
+        Admin,
+        User
+    }
 }
