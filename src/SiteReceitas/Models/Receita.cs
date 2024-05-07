@@ -20,8 +20,12 @@ namespace SiteReceitas.Models
         // Relacionamento 1:N com Ingrediente_Receita (Receita pode ter vários ingredientes_receita, mas cada ingrediente_receita pertence a apenas uma receita)
         public List<Ingrediente_Receita> IngredientesReceita { get; set; }
 
+        [Display(Name = "Imagem")]
+        public byte[] Imagem { get; set; }
+
         // FK IdUsuario
         public int Id { get; set; }
+
         public Usuario Usuario { get; set; }
 
    

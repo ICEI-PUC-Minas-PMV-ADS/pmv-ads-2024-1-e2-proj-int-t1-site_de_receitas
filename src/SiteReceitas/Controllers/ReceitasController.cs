@@ -22,10 +22,21 @@ namespace SiteReceitas.Controllers
             return View();
         }
 
-        public async Task<IActionResult> Create(Receita receita)
+        public async Task<IActionResult> Create(Receita receita, IFormFile image)
         {
              if (ModelState.IsValid)
             {
+
+                if (image != null && image.Length > 0)
+                {
+
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        await image.CopyToAsync(memoryStream);
+                        receita.Imagem = memoryStream.ToArray();
+                    }
+                }
+
                 _context.Receitas.Add(receita);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
