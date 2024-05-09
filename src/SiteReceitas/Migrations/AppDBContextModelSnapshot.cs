@@ -49,6 +49,9 @@ namespace SiteReceitas.Migrations
                     b.Property<int>("IngredienteId")
                         .HasColumnType("int");
 
+                    b.Property<byte[]>("Imagem")
+                        .HasColumnType("varbinary(max)");
+
                     b.Property<string>("ModoPreparo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
