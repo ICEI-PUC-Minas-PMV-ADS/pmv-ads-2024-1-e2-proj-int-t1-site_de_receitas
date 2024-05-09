@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
+using System.ComponentModel.DataAnnotations;
 
 #nullable disable
 
@@ -18,6 +19,7 @@ namespace SiteReceitas.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     SobreNome = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DataNascimento = table.Column<DateOnly>(type: "date", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Senha = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },

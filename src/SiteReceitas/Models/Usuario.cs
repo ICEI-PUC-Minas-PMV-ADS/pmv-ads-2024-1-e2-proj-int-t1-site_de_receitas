@@ -18,6 +18,11 @@ namespace SiteReceitas.Models
         [Display(Name = "Sobrenome")]
         public string SobreNome { get; set; }
 
+        [Required(ErrorMessage = "É necessário informar a data de nascimento")]
+        [Display(Name = "Data de Nascimento")]
+        [DataType(DataType.Date)]
+        public DateTime DataNascimento  { get; set; }
+
         [Required(ErrorMessage = "É necessário informar o E-mail")]
         [DataType(DataType.EmailAddress, ErrorMessage = "E-mail inválido")]
         [Display(Name = "E-mail")]
