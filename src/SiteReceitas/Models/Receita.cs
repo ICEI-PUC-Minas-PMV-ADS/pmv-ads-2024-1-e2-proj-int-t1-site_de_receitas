@@ -22,5 +22,7 @@ namespace SiteReceitas.Models
         public int IngredienteId { get; set; }
 
         public Ingrediente Ingrediente { get; set; }
+
+        public ICollection<Avaliacao> Avaliacoes { get; set; }
     }
 }
