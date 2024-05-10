@@ -10,6 +10,10 @@ namespace SiteReceitas.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropColumn(
+                name: "Imagem",
+                table: "Receitas");
+
             migrationBuilder.CreateTable(
                 name: "Usuarios",
                 columns: table => new
@@ -32,6 +36,12 @@ namespace SiteReceitas.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Usuarios");
+
+            migrationBuilder.AddColumn<byte[]>(
+                name: "Imagem",
+                table: "Receitas",
+                type: "varbinary(max)",
+                nullable: true);
         }
     }
 }

@@ -11,8 +11,8 @@ using SiteReceitas.Models;
 namespace SiteReceitas.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20240421155400_RevertChanges")]
-    partial class RevertChanges
+    [Migration("20240510000435_M01-AddTableUsuario")]
+    partial class M01AddTableUsuario
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,13 +24,33 @@ namespace SiteReceitas.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("SiteReceitas.Models.Receita", b =>
+            modelBuilder.Entity("SiteReceitas.Models.Ingrediente", b =>
                 {
-                    b.Property<int>("IdReceita")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdReceita"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("NomeIngrediente")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Ingredientes");
+                });
+
+            modelBuilder.Entity("SiteReceitas.Models.Receita", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("IngredienteId")
+                        .HasColumnType("int");
 
                     b.Property<string>("ModoPreparo")
                         .IsRequired()
@@ -40,7 +60,9 @@ namespace SiteReceitas.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("IdReceita");
+                    b.HasKey("Id");
+
+                    b.HasIndex("IngredienteId");
 
                     b.ToTable("Receitas");
                 });
@@ -72,6 +94,17 @@ namespace SiteReceitas.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Usuarios");
+                });
+
+            modelBuilder.Entity("SiteReceitas.Models.Receita", b =>
+                {
+                    b.HasOne("SiteReceitas.Models.Ingrediente", "Ingrediente")
+                        .WithMany()
+                        .HasForeignKey("IngredienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Ingrediente");
                 });
 #pragma warning restore 612, 618
         }
