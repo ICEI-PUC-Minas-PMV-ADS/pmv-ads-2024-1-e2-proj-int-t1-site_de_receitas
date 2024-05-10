@@ -8,6 +8,8 @@ namespace SiteReceitas.Models
         public AppDBContext(DbContextOptions<AppDBContext> options) : base(options) { }
         public DbSet<SiteReceitas.Models.Receita> Receita { get; set; }
         public DbSet<SiteReceitas.Models.Ingrediente> Ingrediente { get; set; }
+
+        public DbSet<Usuario> Usuarios { get; set; }
  
     }
 }
