@@ -13,8 +13,10 @@ O projeto em desenvolvimento tem como objetivo principal ampliar o conhecimento 
 * Alex Bizarria Bezerra
 * Alexandre Figueiredo Camargo
 * Bernardo Alves Sirqueira
+* Bernardo Miguel Soutelo Marra
 * Isabela Gontijo de Castro
 * Lorrayne Victoria Caliari Machado
+* Matheus Reis Castelliano
 
 ## Orientador
 
