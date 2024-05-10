@@ -11,5 +11,6 @@ namespace SiteReceitas.Models
 
         public DbSet<Usuario> Usuarios { get; set; }
  
+        public DbSet<Avaliacao> Avaliacoes { get; set; }
     }
 }
