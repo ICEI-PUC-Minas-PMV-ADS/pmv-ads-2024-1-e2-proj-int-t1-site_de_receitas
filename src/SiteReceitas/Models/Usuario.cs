@@ -29,8 +29,9 @@ namespace SiteReceitas.Models
         public string Senha { get; set; } // Senha do usuário
     }
 
-    public enum Perfil{ // Enumeração para definir o perfil do usuário
-        Admin, 
+    public enum Perfil
+    {
+        Admin,
         User
     }
 }

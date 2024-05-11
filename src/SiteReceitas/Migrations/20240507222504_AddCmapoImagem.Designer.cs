@@ -12,8 +12,8 @@ using SiteReceitas.Models;
 namespace SiteReceitas.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20240421160307_M04-FKUsuario")]
-    partial class M04FKUsuario
+    [Migration("20240507222504_AddCmapoImagem")]
+    partial class AddCmapoImagem
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,6 +25,27 @@ namespace SiteReceitas.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("SiteReceitas.Models.Ingrediente", b =>
+                {
+                    b.Property<int>("IdIngrediente")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdIngrediente"));
+
+                    b.Property<string>("NomeIngrediente")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UnidadeMedida")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdIngrediente");
+
+                    b.ToTable("Ingredientes");
+                });
+
             modelBuilder.Entity("SiteReceitas.Models.Ingrediente_Receita", b =>
                 {
                     b.Property<int>("IdIngredienteReceita")
@@ -33,7 +54,13 @@ namespace SiteReceitas.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdIngredienteReceita"));
 
+                    b.Property<int>("IdIngrediente")
+                        .HasColumnType("int");
+
                     b.Property<int>("IdReceita")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("IngredienteIdIngrediente")
                         .HasColumnType("int");
 
                     b.Property<int>("QuantidadeIngrediente")
@@ -43,6 +70,8 @@ namespace SiteReceitas.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("IdIngredienteReceita");
+
+                    b.HasIndex("IngredienteIdIngrediente");
 
                     b.HasIndex("ReceitaIdReceita");
 
@@ -59,6 +88,9 @@ namespace SiteReceitas.Migrations
 
                     b.Property<int>("Id")
                         .HasColumnType("int");
+
+                    b.Property<byte[]>("Imagem")
+                        .HasColumnType("varbinary(max)");
 
                     b.Property<string>("ModoPreparo")
                         .IsRequired()
@@ -109,9 +141,15 @@ namespace SiteReceitas.Migrations
 
             modelBuilder.Entity("SiteReceitas.Models.Ingrediente_Receita", b =>
                 {
+                    b.HasOne("SiteReceitas.Models.Ingrediente", "Ingrediente")
+                        .WithMany("IngredientesReceita")
+                        .HasForeignKey("IngredienteIdIngrediente");
+
                     b.HasOne("SiteReceitas.Models.Receita", "Receita")
                         .WithMany("IngredientesReceita")
                         .HasForeignKey("ReceitaIdReceita");
+
+                    b.Navigation("Ingrediente");
 
                     b.Navigation("Receita");
                 });
@@ -123,6 +161,11 @@ namespace SiteReceitas.Migrations
                         .HasForeignKey("UsuarioId");
 
                     b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("SiteReceitas.Models.Ingrediente", b =>
+                {
+                    b.Navigation("IngredientesReceita");
                 });
 
             modelBuilder.Entity("SiteReceitas.Models.Receita", b =>
