@@ -13,18 +13,18 @@ builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
 builder.Services.AddDbContext<AppDBContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.Configure<CookiePolicyOptions>(options =>
+builder.Services.Configure<CookiePolicyOptions>(options => // Configuração de cookies de sessão do usuário (tempo de expiração, etc) 
 {
     // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-    options.CheckConsentNeeded = context => true;
-    options.MinimumSameSitePolicy = SameSiteMode.None;
+    options.CheckConsentNeeded = context => true; // Verifica se o consentimento do usuário é necessário
+    options.MinimumSameSitePolicy = SameSiteMode.None; // Política de cookies
 });
 
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme) // Configuração de autenticação do usuário
     .AddCookie(options =>
     {
-        options.AccessDeniedPath = "/Usuarios/AccessDenied/";
-        options.LoginPath = "/Usuarios/Login/";
+        options.AccessDeniedPath = "/Usuarios/AccessDenied/"; // Página de acesso negado
+        options.LoginPath = "/Usuarios/Login/"; // Página de login
     });
 
 var app = builder.Build();

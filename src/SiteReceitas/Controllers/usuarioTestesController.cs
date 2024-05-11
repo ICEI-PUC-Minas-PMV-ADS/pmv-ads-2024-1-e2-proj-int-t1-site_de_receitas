@@ -27,57 +27,58 @@ namespace SiteReceitas.Controllers
             return View(await _context.UsuariosTeste.ToListAsync());
         }
 
-        public IActionResult Login()
+        public IActionResult Login() // GET Login 
         {
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(usuarioTeste usuario)
+        public async Task<IActionResult> Login(usuarioTeste usuario) // POST Login
         {
-            var dados = await _context.UsuariosTeste.FirstOrDefaultAsync(u => u.Email == usuario.Email);
+            var dados = await _context.UsuariosTeste.FirstOrDefaultAsync(u => u.Email == usuario.Email); // Verifica se o email existe no banco de dados
 
-            if (dados == null)
+            if (dados == null) // Se o email não existir, retorna a mensagem de erro
             {
-               ViewBag.Message = "Email e/ou senha inválidos";
+               ViewBag.Message = "Email e/ou senha inválidos"; // Mensagem de erro
                return View();
             }
-            bool senhaValida = BCrypt.Net.BCrypt.Verify(usuario.Senha, dados.Senha);
 
-            if (senhaValida)
+            bool senhaValida = BCrypt.Net.BCrypt.Verify(usuario.Senha, dados.Senha); // Verifica se a senha é válida
+
+            if (senhaValida) // Se a senha for válida, cria a sessão
             {
-                var claims = new List<Claim>
+                var claims = new List<Claim> // Cria a sessão
                 {
-                    new Claim(ClaimTypes.Name, dados.Nome),
-                    new Claim(ClaimTypes.Email, dados.Email.ToString()),
-                    new Claim(ClaimTypes.Role, dados.Perfil.ToString())
+                    new Claim(ClaimTypes.Name, dados.Nome), // Adiciona o nome do usuário na sessão
+                    new Claim(ClaimTypes.Email, dados.Email.ToString()), // Adiciona o email do usuário na sessão
+                    new Claim(ClaimTypes.Role, dados.Perfil.ToString()) // Adiciona o perfil do usuário na sessão
                 };
 
-                var identidade = new ClaimsIdentity(claims, "login");
-                ClaimsPrincipal principal = new ClaimsPrincipal(identidade);
+                var identidade = new ClaimsIdentity(claims, "login"); // Cria a identidade
+                ClaimsPrincipal principal = new ClaimsPrincipal(identidade); // Cria o principal
 
-                var propriedades = new AuthenticationProperties
+                var propriedades = new AuthenticationProperties // Cria as propriedades da sessão
                 {
-                    AllowRefresh = true,
-                    ExpiresUtc = DateTime.UtcNow.AddHours(8),
-                    IsPersistent = true
+                    AllowRefresh = true, // Permite atualizar a sessão 
+                    ExpiresUtc = DateTime.UtcNow.AddHours(8), // Tempo de expiração da sessão
+                    IsPersistent = true // Mantém a sessão ativa
                 };
 
-                await HttpContext.SignInAsync(principal, propriedades);
+                await HttpContext.SignInAsync(principal, propriedades);   
 
-                return Redirect("/");
+                return Redirect("/"); // Redireciona para a página inicial
             }
-            else
+            else // Se a senha for inválida, retorna a mensagem de erro
             {
-                ViewBag.Mensagem = "Email e/ou senha inválidos";
+                ViewBag.Mensagem = "Email e/ou senha inválidos"; 
             }
 
             return View();
         }
 
-        public async Task<IActionResult> Logout()
+        public async Task<IActionResult> Logout() // GET Logout
         {
-            await HttpContext.SignOutAsync();
+            await HttpContext.SignOutAsync(); // Encerra a sessão
             return Redirect("/");
         }
 
