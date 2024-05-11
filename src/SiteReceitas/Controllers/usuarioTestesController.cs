@@ -70,7 +70,7 @@ namespace SiteReceitas.Controllers
             }
             else // Se a senha for inválida, retorna a mensagem de erro
             {
-                ViewBag.Mensagem = "Email e/ou senha inválidos"; 
+                ViewBag.Message = "Email e/ou senha inválidos"; 
             }
 
             return View();
