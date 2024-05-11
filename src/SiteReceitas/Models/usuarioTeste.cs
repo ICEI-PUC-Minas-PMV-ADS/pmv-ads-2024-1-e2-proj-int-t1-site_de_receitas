@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SiteReceitas.Models
 {
-    [Table("Usuarios")] // Nome da tabela no banco de dados
+    [Table("UsuariosTeste")] // Nome da tabela no banco de dados
     public class usuarioTeste
     {
 
@@ -15,7 +15,7 @@ namespace SiteReceitas.Models
         public string Nome { get; set; } // Nome do usuário
 
         [Required(ErrorMessage = "É necessário informar o email")]
-        [Display(Name = "Email")]
+        [Display(Name = "Email")]   
         public string Email { get; set; } // E-mail do usuário
 
         [Required(ErrorMessage = "É necessário informar a senha")]

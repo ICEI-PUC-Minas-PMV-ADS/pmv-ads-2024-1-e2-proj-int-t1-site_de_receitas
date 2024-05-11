@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SiteReceitas.Models
 {
-    [Table("UsuariosTeste")] // Nome da tabela no banco de dados
+    [Table("Usuarios")] // Nome da tabela no banco de dados
     public class Usuario
     {
 

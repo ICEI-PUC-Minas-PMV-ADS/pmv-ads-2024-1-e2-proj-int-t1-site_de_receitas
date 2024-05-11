@@ -57,6 +57,7 @@ namespace SiteReceitas.Controllers
         {
             if (ModelState.IsValid)
             {
+                usuarioTeste.Senha = BCrypt.Net.BCrypt.HashPassword(usuarioTeste.Senha);
                 _context.Add(usuarioTeste);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -96,6 +97,7 @@ namespace SiteReceitas.Controllers
             {
                 try
                 {
+                    usuarioTeste.Senha = BCrypt.Net.BCrypt.HashPassword(usuarioTeste.Senha);
                     _context.Update(usuarioTeste);
                     await _context.SaveChangesAsync();
                 }
