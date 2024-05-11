@@ -35,6 +35,26 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="usuarioTestes" asp-action="Index">UsuariosTeste</a>
                         </li>
                     </ul>
+                    <ul class="navbar-nav">
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <p class="nav-link text-dark" asp-area="">Olá, @User.Identity.Name!</p>
+                            </li>
+                            <li class="nav-item">
+                                <form method="post" asp-area="" asp-controller="usuarioTestes" asp-action="Logout" id="logoutForm" class="form-inline">
+                                    <button type="submit" class="nav-link btn btn-link text-dark">Sair</button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="usuarioTestes" asp-action="Login">Login</a>
+                            </li>
+                        }
+                    </ul>
                 </div>
             </div>
         </nav>

@@ -1,4 +1,6 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileSystemGlobbing.Internal;
 using SiteReceitas.Models;
 
@@ -13,14 +15,15 @@ builder.Services.AddDbContext<AppDBContext>(options => options.UseSqlServer(buil
 
 builder.Services.Configure<CookiePolicyOptions>(options =>
 {
+    // This lambda determines whether user consent for non-essential cookies is needed for a given request.
     options.CheckConsentNeeded = context => true;
     options.MinimumSameSitePolicy = SameSiteMode.None;
 });
 
-builder.Services.AddAuthentication(Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults.AuthenticationScheme)
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
-        options.AccessDeniedPath = "/";
+        options.AccessDeniedPath = "/Usuarios/AccessDenied/";
         options.LoginPath = "/Usuarios/Login/";
     });
 
