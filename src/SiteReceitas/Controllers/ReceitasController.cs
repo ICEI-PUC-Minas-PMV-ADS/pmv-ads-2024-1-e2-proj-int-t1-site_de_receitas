@@ -56,10 +56,21 @@ namespace SiteReceitas.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,NomeReceita,ModoPreparo,IngredienteId")] Receita receita)
+        public async Task<IActionResult> Create([Bind("Id,NomeReceita,ModoPreparo,IngredienteId")] Receita receita, IFormFile imagem)
         {
             if (ModelState.IsValid)
             {
+
+                if (imagem != null && imagem.Length > 0)
+                {
+
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        await imagem.CopyToAsync(memoryStream);
+                        receita.Imagem = memoryStream.ToArray();
+                    }
+                }
+
                 _context.Add(receita);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
