@@ -16,8 +16,8 @@ namespace SiteReceitas.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Tipo = table.Column<int>(type: "int", nullable: false),
-                    ReceitaId = table.Column<int>(type: "int", nullable: false)
+                    ReceitaId = table.Column<int>(type: "int", nullable: false),
+                    Tipo = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

@@ -11,7 +11,7 @@ using SiteReceitas.Models;
 namespace SiteReceitas.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20240510030612_M04-AddTableAvaliacoes")]
+    [Migration("20240512195836_M04-AddTableAvaliacoes")]
     partial class M04AddTableAvaliacoes
     {
         /// <inheritdoc />

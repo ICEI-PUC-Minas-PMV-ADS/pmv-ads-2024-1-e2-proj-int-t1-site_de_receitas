@@ -10,16 +10,17 @@ namespace SiteReceitas.Models
         [Key]
         public int Id { get; set; }
 
-        [Display(Name = "Avaliação da receita")]
-        public Nota Tipo { get; set; }
-
         [Required(ErrorMessage ="Obrigatório informar a receita!")]
-        public int ReceitaId{ get; set; }
+        [Display(Name ="Reeceita")]
+        public int ReceitaId { get; set; }
 
         [ForeignKey("ReceitaId")]
-        public Receita Receita { get; set;}
+        public Receita Receita { get; set; }
+
+        [Display(Name = "Avaliação da receita")]
+        public TipoNota Tipo { get; set; }
     }
-    public enum Nota
+    public enum TipoNota
     {
         Ruim,
         Bom,
