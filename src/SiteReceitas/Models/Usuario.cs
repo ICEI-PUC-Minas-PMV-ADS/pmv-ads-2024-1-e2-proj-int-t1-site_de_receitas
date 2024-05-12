@@ -27,11 +27,16 @@ namespace SiteReceitas.Models
         [DataType(DataType.Password)]
         [Display(Name = "Senha")]
         public string Senha { get; set; } // Senha do usuário
+
+        [Required(ErrorMessage = "É necessário informar o perfil")]
+        [Display(Name = "Perfil")]
+        public Perfil Perfil { get; set; } // Perfil do usuário
+
     }
 
     public enum Perfil
     {
-        Admin,
-        User
+        Leitor,
+        Autor
     }
 }

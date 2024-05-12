@@ -24,6 +24,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Senha)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Perfil)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -42,6 +45,8 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Senha)
             </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Perfil)
             <td>
                     <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
                     <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Visualizar</a> |
