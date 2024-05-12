@@ -1,12 +1,11 @@
-﻿@model SiteReceitas.Models.Usuario
+﻿@model SiteReceitas.Models.PerfilUsuario
 
 @{
     ViewData["Title"] = "Create";
 }
 
-<h1>Cadastrar Usuario</h1>
+<h1>Novo Usuário</h1>
 
-<h4>Usuario</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -33,16 +32,20 @@
                 <span asp-validation-for="Senha" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Perfil" class="control-label"></label>
-                <select asp-for="Perfil" class="form-control" asp-items="Html.GetEnumSelectList<Perfil>()"></select>
-                <span asp-validation-for="Perfil" class="text-danger"></span>
+                <label asp-for="TipoPerfil" class="control-label"></label>
+                <input asp-for="TipoPerfil" class="form-control" />
+                <span asp-validation-for="TipoPerfil" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Cadastrar" class="btn btn-success" /> |
-                <a class="btn btn-success" asp-action="Index">Voltar</a>
+                <input type="submit" value="Cadastrar" class="btn btn-success" />
             </div>
+
         </form>
     </div>
+</div>
+
+<div>
+    <a class="btn btn-info" asp-action="Index">Voltar</a>
 </div>
 
 @section Scripts {

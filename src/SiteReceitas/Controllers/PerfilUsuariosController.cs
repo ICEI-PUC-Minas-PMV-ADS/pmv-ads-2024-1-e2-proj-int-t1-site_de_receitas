@@ -9,22 +9,22 @@ using SiteReceitas.Models;
 
 namespace SiteReceitas.Controllers
 {
-    public class UsuariosController : Controller
+    public class PerfilUsuariosController : Controller
     {
         private readonly AppDBContext _context;
 
-        public UsuariosController(AppDBContext context)
+        public PerfilUsuariosController(AppDBContext context)
         {
             _context = context;
         }
 
-        // GET: Usuarios
+        // GET: PerfilUsuarios
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Usuarios.ToListAsync());
+            return View(await _context.PerfilUsuario.ToListAsync());
         }
 
-        // GET: Usuarios/Details/5
+        // GET: PerfilUsuarios/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -32,39 +32,39 @@ namespace SiteReceitas.Controllers
                 return NotFound();
             }
 
-            var usuario = await _context.Usuarios
+            var perfilUsuario = await _context.PerfilUsuario
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (usuario == null)
+            if (perfilUsuario == null)
             {
                 return NotFound();
             }
 
-            return View(usuario);
+            return View(perfilUsuario);
         }
 
-        // GET: Usuarios/Create
+        // GET: PerfilUsuarios/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Usuarios/Create
+        // POST: PerfilUsuarios/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,SobreNome,Email,Senha")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("Id,Nome,SobreNome,Email,Senha,TipoPerfil")] PerfilUsuario perfilUsuario)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(usuario);
+                _context.Add(perfilUsuario);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(usuario);
+            return View(perfilUsuario);
         }
 
-        // GET: Usuarios/Edit/5
+        // GET: PerfilUsuarios/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -72,22 +72,22 @@ namespace SiteReceitas.Controllers
                 return NotFound();
             }
 
-            var usuario = await _context.Usuarios.FindAsync(id);
-            if (usuario == null)
+            var perfilUsuario = await _context.PerfilUsuario.FindAsync(id);
+            if (perfilUsuario == null)
             {
                 return NotFound();
             }
-            return View(usuario);
+            return View(perfilUsuario);
         }
 
-        // POST: Usuarios/Edit/5
+        // POST: PerfilUsuarios/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,SobreNome,Email,Senha")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,SobreNome,Email,Senha,TipoPerfil")] PerfilUsuario perfilUsuario)
         {
-            if (id != usuario.Id)
+            if (id != perfilUsuario.Id)
             {
                 return NotFound();
             }
@@ -96,12 +96,12 @@ namespace SiteReceitas.Controllers
             {
                 try
                 {
-                    _context.Update(usuario);
+                    _context.Update(perfilUsuario);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!UsuarioExists(usuario.Id))
+                    if (!PerfilUsuarioExists(perfilUsuario.Id))
                     {
                         return NotFound();
                     }
@@ -112,10 +112,10 @@ namespace SiteReceitas.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(usuario);
+            return View(perfilUsuario);
         }
 
-        // GET: Usuarios/Delete/5
+        // GET: PerfilUsuarios/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -123,34 +123,34 @@ namespace SiteReceitas.Controllers
                 return NotFound();
             }
 
-            var usuario = await _context.Usuarios
+            var perfilUsuario = await _context.PerfilUsuario
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (usuario == null)
+            if (perfilUsuario == null)
             {
                 return NotFound();
             }
 
-            return View(usuario);
+            return View(perfilUsuario);
         }
 
-        // POST: Usuarios/Delete/5
+        // POST: PerfilUsuarios/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var usuario = await _context.Usuarios.FindAsync(id);
-            if (usuario != null)
+            var perfilUsuario = await _context.PerfilUsuario.FindAsync(id);
+            if (perfilUsuario != null)
             {
-                _context.Usuarios.Remove(usuario);
+                _context.PerfilUsuario.Remove(perfilUsuario);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool UsuarioExists(int id)
+        private bool PerfilUsuarioExists(int id)
         {
-            return _context.Usuarios.Any(e => e.Id == id);
+            return _context.PerfilUsuario.Any(e => e.Id == id);
         }
     }
 }
