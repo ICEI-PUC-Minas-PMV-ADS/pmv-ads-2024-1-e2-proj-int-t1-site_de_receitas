@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +25,62 @@ namespace SiteReceitas.Controllers
         {
             return View(await _context.PerfilUsuario.ToListAsync());
         }
+
+        public IActionResult Login() // GET Login 
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(PerfilUsuario perfilUsuario)
+        {
+            var dados = await _context.PerfilUsuario.FirstOrDefaultAsync(x => x.Email == perfilUsuario.Email);
+
+            if (dados == null)
+            {
+                ViewBag.Message = "Email ou senha inválidos";
+                return View();
+            }
+
+            bool senhaValida = BCrypt.Net.BCrypt.Verify(perfilUsuario.Senha, dados.Senha);
+
+            if (senhaValida)
+            {
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, dados.Nome),
+                    new Claim(ClaimTypes.Email, dados.Email.ToString()),
+                    new Claim(ClaimTypes.Role, dados.TipoPerfil.ToString())
+                };
+
+                var identidade = new ClaimsIdentity(claims, "login");
+                ClaimsPrincipal principal = new ClaimsPrincipal(identidade);
+
+                var propriedades = new AuthenticationProperties
+                {
+                    AllowRefresh = true,
+                    ExpiresUtc = DateTime.UtcNow.AddHours(8),
+                    IsPersistent = true
+                };
+
+                await HttpContext.SignInAsync(principal, propriedades);
+
+                return Redirect("/");
+            }
+            else
+            {
+                ViewBag.Message = "Email ou senha inválidos";
+            }
+
+            return View();
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+            return Redirect("/");
+        }
+
 
         // GET: PerfilUsuarios/Details/5
         public async Task<IActionResult> Details(int? id)
