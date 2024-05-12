@@ -57,6 +57,7 @@ namespace SiteReceitas.Controllers
         {
             if (ModelState.IsValid)
             {
+                perfilUsuario.Senha = BCrypt.Net.BCrypt.HashPassword(perfilUsuario.Senha);
                 _context.Add(perfilUsuario);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -96,8 +97,9 @@ namespace SiteReceitas.Controllers
             {
                 try
                 {
-                    _context.Update(perfilUsuario);
-                    await _context.SaveChangesAsync();
+                   perfilUsuario.Senha = BCrypt.Net.BCrypt.HashPassword(perfilUsuario.Senha);
+                   _context.Update(perfilUsuario);
+                   await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {

@@ -27,10 +27,10 @@ namespace SiteReceitas.Models
 
         [Required(ErrorMessage = "Obrigatório informar o perfil!")]
         [Display(Name = "Perfil")]
-        public int TipoPerfil { get; set; }
+        public TipoPerfil TipoPerfil { get; set; }
     }
 
-    enum TipoPerfil
+    public enum TipoPerfil
     {
         Autor,
         Leitor
