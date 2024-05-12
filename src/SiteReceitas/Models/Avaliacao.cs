@@ -11,7 +11,7 @@ namespace SiteReceitas.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage ="Obrigatório informar a receita!")]
-        [Display(Name ="Reeceita")]
+        [Display(Name ="Receita")]
         public int ReceitaId { get; set; }
 
         [ForeignKey("ReceitaId")]
