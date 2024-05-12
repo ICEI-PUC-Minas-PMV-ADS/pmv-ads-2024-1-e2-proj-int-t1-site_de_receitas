@@ -1,13 +1,13 @@
-﻿@model IEnumerable<SiteReceitas.Models.Usuario>
+﻿@model IEnumerable<SiteReceitas.Models.PerfilUsuario>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Usuarios</h1>
+<h1>Index</h1>
 
 <p>
-    <a class="btn btn-success" asp-action="Create">Cadastrar Usuario</a>
+    <a class="btn btn-success" asp-action="Create">Novo usuário</a>
 </p>
 <table class="table">
     <thead>
@@ -22,7 +22,7 @@
                 @Html.DisplayNameFor(model => model.Email)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Senha)
+                @Html.DisplayNameFor(model => model.TipoPerfil)
             </th>
             <th></th>
         </tr>
@@ -40,12 +40,12 @@
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Senha)
+                @Html.DisplayFor(modelItem => item.TipoPerfil)
             </td>
             <td>
                     <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
-                    <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Visualizar</a> |
-                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Excluir</a>
+                    <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
             </td>
         </tr>
 }
