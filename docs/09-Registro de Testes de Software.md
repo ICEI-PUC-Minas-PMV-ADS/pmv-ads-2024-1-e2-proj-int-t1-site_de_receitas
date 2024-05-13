@@ -14,7 +14,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-02 - Cadastro de receitas** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-002: O sistema deve permitir que o usuário cadastre novas receitas com o nome dessas receitas e seus respectivos ingredientes e modos de preparo. |
-|Registro de evidência | [Teste 2](https://drive.google.com/file/d/1W9hhcPPiycbWOIJnqJkcbgVIg3ao_WPh/view?usp=sharing) |
+|Registro de evidência | [Teste 1](https://drive.google.com/file/d/1tgMhaTJML-TRLhNvde1qD0kbBd8628dI/view?usp=sharing) |
 |Resultado | FALHA - não gravou |
 |Ação | Já foi detectado que é um problema na tabela de imagens, correções em andamento.|
 
