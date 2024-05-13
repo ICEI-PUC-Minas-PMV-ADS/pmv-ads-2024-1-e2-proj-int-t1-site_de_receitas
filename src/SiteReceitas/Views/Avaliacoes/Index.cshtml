@@ -1,0 +1,41 @@
+﻿@model IEnumerable<SiteReceitas.Models.Avaliacao>
+
+@{
+    ViewData["Title"] = "Avaliações";
+}
+
+<h1>Avaliações</h1>
+
+<p>
+    <a asp-action="Create"class="btn btn-success">Avaliar uma Receita</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Tipo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Receita)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tipo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Receita.NomeReceita)
+            </td>
+            <td>
+                    <a class="btn btn-warning asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                    <a class="btn btn-primary asp-action="Details" asp-route-id="@item.Id">Visualizar</a> |
+                    <a class="btn btn-danger asp-action="Delete" asp-route-id="@item.Id">Apagar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

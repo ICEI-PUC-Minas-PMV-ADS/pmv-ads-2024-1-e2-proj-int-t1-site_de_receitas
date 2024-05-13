@@ -1,0 +1,35 @@
+﻿@model SiteReceitas.Models.Avaliacao
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Fazer uma nova avaliação</h1>
+
+<h4>Avaliacão</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Tipo" class="control-label"></label>
+                <select asp-for="Tipo" class="form-control" asp-items="Html.GetEnumSelectList<TipoNota>()"></select>
+                <span asp-validation-for="Tipo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReceitaId" class="control-label"></label>
+                <select asp-for="ReceitaId" class ="form-control" asp-items="ViewBag.ReceitaId"></select>
+            </div>
+            <div class="form-group">
+                <a asp-action="Index" class="btn btn-info">Voltar</a> |
+                <input type="submit" value="Salvar" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
