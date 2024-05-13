@@ -28,7 +28,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-04 – Pesquisar receita** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-004 - O sistema deve permitir que o usuário pesquise por receitas cadastradas através de seus ingredientes ou nomes.n |
-|Registro de evidência | www.teste.com.br/drive/ct-02 |
+|Registro de evidência | - |
 |Resultado | Não implementado  |
 |Ação | Previsto para a próxima etapa. |
 
