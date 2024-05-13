@@ -16,13 +16,14 @@ namespace SiteReceitas.Models
         [Required(ErrorMessage = "Obrigatório informar o modo de preparo!")]
         public string ModoPreparo { get; set; }
 
-
-        [Required(ErrorMessage = "É obrigatório informar o Ingrediente!")]
+        [Required(ErrorMessage = "Obrigatório informar o ingreditente!")]
         [Display(Name = "Ingrediente")]
         public int IngredienteId { get; set; }
 
         public Ingrediente Ingrediente { get; set; }
 
         public ICollection<Avaliacao> Avaliacoes { get; set; }
+        [Display(Name = "Imagem")]
+        public byte[] Imagem { get; set; }
     }
 }
