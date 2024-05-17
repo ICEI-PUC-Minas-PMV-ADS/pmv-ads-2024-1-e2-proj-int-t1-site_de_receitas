@@ -5,7 +5,7 @@
 namespace SiteReceitas.Migrations
 {
     /// <inheritdoc />
-    public partial class TableIngredientes : Migration
+    public partial class m00 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -21,6 +21,23 @@ namespace SiteReceitas.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Ingredientes", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "PerfilUsuario",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    SobreNome = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Senha = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    TipoPerfil = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PerfilUsuario", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -44,6 +61,31 @@ namespace SiteReceitas.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Avaliacoes",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ReceitaId = table.Column<int>(type: "int", nullable: false),
+                    Tipo = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Avaliacoes", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Avaliacoes_Receitas_ReceitaId",
+                        column: x => x.ReceitaId,
+                        principalTable: "Receitas",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Avaliacoes_ReceitaId",
+                table: "Avaliacoes",
+                column: "ReceitaId");
+
             migrationBuilder.CreateIndex(
                 name: "IX_Receitas_IngredienteId",
                 table: "Receitas",
@@ -53,6 +95,12 @@ namespace SiteReceitas.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Avaliacoes");
+
+            migrationBuilder.DropTable(
+                name: "PerfilUsuario");
+
             migrationBuilder.DropTable(
                 name: "Receitas");
 

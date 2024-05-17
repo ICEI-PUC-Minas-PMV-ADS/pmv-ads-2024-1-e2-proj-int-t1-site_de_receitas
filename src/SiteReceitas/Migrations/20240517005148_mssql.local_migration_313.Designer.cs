@@ -11,8 +11,8 @@ using SiteReceitas.Models;
 namespace SiteReceitas.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20240512211025_M03-AddTablePerfilUsuario")]
-    partial class M03AddTablePerfilUsuario
+    [Migration("20240517005148_mssql.local_migration_313")]
+    partial class mssqllocal_migration_313
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,6 +23,27 @@ namespace SiteReceitas.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("SiteReceitas.Models.Avaliacao", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ReceitaId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Tipo")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReceitaId");
+
+                    b.ToTable("Avaliacoes");
+                });
 
             modelBuilder.Entity("SiteReceitas.Models.Ingrediente", b =>
                 {
@@ -99,36 +120,15 @@ namespace SiteReceitas.Migrations
                     b.ToTable("Receitas");
                 });
 
-            modelBuilder.Entity("SiteReceitas.Models.Usuario", b =>
+            modelBuilder.Entity("SiteReceitas.Models.Avaliacao", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                    b.HasOne("SiteReceitas.Models.Receita", "Receita")
+                        .WithMany("Avaliacoes")
+                        .HasForeignKey("ReceitaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Perfil")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Senha")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("SobreNome")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Usuarios");
+                    b.Navigation("Receita");
                 });
 
             modelBuilder.Entity("SiteReceitas.Models.Receita", b =>
@@ -140,6 +140,11 @@ namespace SiteReceitas.Migrations
                         .IsRequired();
 
                     b.Navigation("Ingrediente");
+                });
+
+            modelBuilder.Entity("SiteReceitas.Models.Receita", b =>
+                {
+                    b.Navigation("Avaliacoes");
                 });
 #pragma warning restore 612, 618
         }

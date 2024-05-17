@@ -99,10 +99,6 @@ namespace SiteReceitas.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<byte[]>("Imagem")
-                        .IsRequired()
-                        .HasColumnType("varbinary(max)");
-
                     b.Property<int>("IngredienteId")
                         .HasColumnType("int");
 
@@ -121,8 +117,6 @@ namespace SiteReceitas.Migrations
                     b.ToTable("Receitas");
                 });
 
-            
-// <<<<<<< BeAlves-Branch
             modelBuilder.Entity("SiteReceitas.Models.Avaliacao", b =>
                 {
                     b.HasOne("SiteReceitas.Models.Receita", "Receita")
@@ -134,18 +128,16 @@ namespace SiteReceitas.Migrations
                     b.Navigation("Receita");
                 });
 
-// =======
-// >>>>>>> main
-//             modelBuilder.Entity("SiteReceitas.Models.Receita", b =>
-//                 {
-//                     b.HasOne("SiteReceitas.Models.Ingrediente", "Ingrediente")
-//                         .WithMany()
-//                         .HasForeignKey("IngredienteId")
-//                         .OnDelete(DeleteBehavior.Cascade)
-//                         .IsRequired();
+            modelBuilder.Entity("SiteReceitas.Models.Receita", b =>
+                {
+                    b.HasOne("SiteReceitas.Models.Ingrediente", "Ingrediente")
+                        .WithMany()
+                        .HasForeignKey("IngredienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-//                     b.Navigation("Ingrediente");
-//                 });
+                    b.Navigation("Ingrediente");
+                });
 
             modelBuilder.Entity("SiteReceitas.Models.Receita", b =>
                 {

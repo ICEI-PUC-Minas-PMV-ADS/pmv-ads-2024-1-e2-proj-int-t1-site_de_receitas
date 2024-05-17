@@ -56,28 +56,28 @@ namespace SiteReceitas.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,NomeReceita,ModoPreparo,IngredienteId")] Receita receita, IFormFile imagem)
-        {
-            if (ModelState.IsValid)
-            {
+        //public async Task<IActionResult> Create([Bind("Id,NomeReceita,ModoPreparo,IngredienteId")] Receita receita, IFormFile imagem)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
 
-                if (imagem != null && imagem.Length > 0)
-                {
+        //        if (imagem != null && imagem.Length > 0)
+        //        {
 
-                    using (var memoryStream = new MemoryStream())
-                    {
-                        await imagem.CopyToAsync(memoryStream);
-                        receita.Imagem = memoryStream.ToArray();
-                    }
-                }
+        //            using (var memoryStream = new MemoryStream())
+        //            {
+        //                await imagem.CopyToAsync(memoryStream);
+        //                receita.Imagem = memoryStream.ToArray();
+        //            }
+        //        }
 
-                _context.Add(receita);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["IngredienteId"] = new SelectList(_context.Ingrediente, "Id", "NomeIngrediente", receita.IngredienteId);
-            return View(receita);
-        }
+        //        _context.Add(receita);
+        //        await _context.SaveChangesAsync();
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    ViewData["IngredienteId"] = new SelectList(_context.Ingrediente, "Id", "NomeIngrediente", receita.IngredienteId);
+        //    return View(receita);
+        //}
 
         // GET: Receitas/Edit/5
         public async Task<IActionResult> Edit(int? id)
