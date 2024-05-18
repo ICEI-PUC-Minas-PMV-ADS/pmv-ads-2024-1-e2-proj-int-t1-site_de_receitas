@@ -8,6 +8,20 @@ Para cada voluntário do teste, é fundamental coletar e apresentar todos os dad
 
 As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
 
+## Testes Remotos Não Moderados de Usabilidade
+Esse é o tipo de teste de usabilidade que costuma ser realizado online.
+
+Por conta disso, o investimento também é menor.
+
+Aqui os participantes realizam os estudos diretamente em seus próprios dispositivos, como tablets, smartphones e notebooks.
+
+## Testes Remotos Moderados de Usabilidade
+Funcionando como um meio termo entre os modelos citados anteriormente, temos os testes remotos moderados.
+
+Visando proporcionar uma experiência mais imersiva e, por consequência, coletando dados mais orgânicos, eles são realizados diretamente na residência ou trabalho dos participantes.
+
+Nesse caso, os moderadores se deslocam até o local para a realização do estudo.
+
 > **Links Úteis**:
 > - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
 > - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
