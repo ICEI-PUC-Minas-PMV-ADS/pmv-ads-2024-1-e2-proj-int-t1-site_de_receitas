@@ -57,6 +57,8 @@ Como requisito pré-definido para o projeto, utilizou-se a linguagem C#, que é 
 
 A aplicação desenvolvida foi hospedada na Azure, que é o serviço de computação em nuvem da Microsoft.
 
+Link: https://sitereceitas20240516212215.azurewebsites.net/
+
 ### 7 - Hospedagem do Projeto:
 
 Utilizou-se o GitHub para a hospedagem da documentação e do código fonte do projeto.
