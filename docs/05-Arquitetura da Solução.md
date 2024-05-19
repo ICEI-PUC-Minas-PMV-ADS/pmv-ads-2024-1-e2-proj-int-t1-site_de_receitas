@@ -19,6 +19,8 @@ Definição de como o software é estruturado em termos dos componentes que faze
 ![Diagrama ER com entidades coloridas (notação UML)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t1-site_de_receitas/assets/133724013/aad713f1-6742-4e5b-bd47-651392b957bf)
 
 
+
+
 ## Tecnologias Utilizadas
 
 Para o desenvlvimento do site de receitas, a equipe utilizou as tecnologias abaixo especificadas.
@@ -40,9 +42,6 @@ Foi utilizado o ASP.NET Core MVC, que é um padrão de arquitetura que divide o 
 * Controllers: Contém os controladores que processam as solicitações HTTP e interagem com o banco de dados.
 * Data: Contém o contexto do banco de dados e as migrações do Entity Framework.
 
-
-
-
 ### 4 - Linguagens de Programação:
 
 Como requisito pré-definido para o projeto, utilizou-se a linguagem C#, que é uma linguagem de programação orientada a objetos. Ela é utilizada para escrever a lógica do aplicativo e manipular os dados. Já para a estruturação e formatação do conteúdo apresentado aos usuários, utilzou-se o HyperText Markup Language (HTML).
@@ -51,9 +50,16 @@ Como requisito pré-definido para o projeto, utilizou-se a linguagem C#, que é 
 
 * Entity Framework Core: Um ORM (Object-Relational Mapping) que permite mapear objetos C# para tabelas SQL.
 * Razor Pages: Uma sintaxe de visualização que permite criar páginas dinâmicas no ASP.NET Core.
+* Microsoft.AspNetCore.Mvc.Rendering: fornece tipos usados para geração de HTML usando helpers de HTML.
 * Identity Framework: Fornece autenticação e autorização para aplicativos ASP.NET Core.
-* NuGet Packages: Use pacotes NuGet para adicionar funcionalidades adicionais, como manipulação de imagens, envio de e-mails, etc.
 
+### 6 - Hospedagem:
+
+A aplicação desenvolvida foi hospedada na Azure, que é o serviço de computação em nuvem da Microsoft.
+
+### 7 - Hospedagem do Projeto:
+
+Utilizou-se o GitHub para a hospedagem da documentação e do código fonte do projeto.
 
 
 
