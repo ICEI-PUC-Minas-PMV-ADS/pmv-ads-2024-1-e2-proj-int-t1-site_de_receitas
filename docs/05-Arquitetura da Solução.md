@@ -53,7 +53,7 @@ Como requisito pré-definido para o projeto, utilizou-se a linguagem C#, que é 
 * Microsoft.AspNetCore.Mvc.Rendering: fornece tipos usados para geração de HTML usando helpers de HTML.
 * Identity Framework: Fornece autenticação e autorização para aplicativos ASP.NET Core.
 
-### 6 - Hospedagem:
+### 6 - Hospedagem do Site:
 
 A aplicação desenvolvida foi hospedada na Azure, que é o serviço de computação em nuvem da Microsoft.
 
