@@ -1,29 +1,12 @@
 # Plano de Testes de Usabilidade
 
-Os testes de usabilidade permitem avaliar a qualidade da interface com o usuário da aplicação interativa.
+O planejamento dos testes de usabilidade a serem realizados com usuários são descritos na tabela a seguir:
 
-Um plano de teste de usabilidade deverá conter: o detalhamento dos objetivos (em função dos requisitos levantados/implementados), dos critérios que serão utilizados para a seleção dos participantes, dos procedimentos a serem adotados pelos condutores de teste (por exemplo: os testes serão presenciais ou remotos? o método será observação direta, medição ou avaliação?), das tarefas a serem executadas, dos dados a serem coletados (quantidade de cliques, número de erros, tempo etc.), a ordem de execução das tarefas e das etapas da sessão de teste, recursos demandados, métricas coletadas etc.
-
-Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
-
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
-
-## Testes Remotos Não Moderados de Usabilidade
-Esse é o tipo de teste de usabilidade que costuma ser realizado online.
-
-Por conta disso, o investimento também é menor.
-
-Aqui os participantes realizam os estudos diretamente em seus próprios dispositivos, como tablets, smartphones e notebooks.
-
-## Testes Remotos Moderados de Usabilidade
-Funcionando como um meio termo entre os modelos citados anteriormente, temos os testes remotos moderados.
-
-Visando proporcionar uma experiência mais imersiva e, por consequência, coletando dados mais orgânicos, eles são realizados diretamente na residência ou trabalho dos participantes.
-
-Nesse caso, os moderadores se deslocam até o local para a realização do estudo.
-
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+| **Caso de Teste** 	| **Requisito Associado** 	| **Objetivo do Teste** 	| **Passos** 	| **Critério de Êxito** 	|
+|:---:	|:---:	|:---:	|:---:	|:---:	|
+| CT-13 – Compatibilidade de navegadores 	| RNF-008 - O sistema deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge, Apple Safari). 	| Verificar se a aplicação abre nos principais navegadores do mercado. 	| Acessar a página principal da aplicação em todos os navegadores. 	| A aplicação deve funcionar corretamente em todos os navegadores. 	|
+| CT-14 – Compatibilidade de navegadores 	| RNF-009 - OO sistema deve continuar funcionando apresentando conteúdo já carregado em caso de queda de conexão ou instabilidade no banco de dados 	| Verificar se a aplicação continua com as informacoes carregadas caso perca conexão 	| Acessar alguma pagina da aplicação e desligar a conexão com a internet	| A aplicação deve continuar carregada 	|
+| CT-15 – Responsividade 	| RNF-010 - O sistema deve ser responsivo. 	| Verificar se a aplicação se adapta de forma automática às condições de tamanho do dispositivo. | Acessar a página principal da aplicação no celular, tablet e computador. 	| A aplicação deve funcionar corretamente em todos os dispositivos. 	|
+| CT-16 – Acessibilidade 	| RNF-011 - O sistema deve ser acessível pela internet. 	| Verificar se a aplicação está disponível na internet. 	| 1 - Abrir o navegador;<br> 2 - Acessar a página principal da aplicação. 	| A aplicação deve funcionar corretamente. 	|
+| CT-17 – Aplicação em manutenção 	| RNF-012 - O sistema deverá informar ao usuário quando o mesmo estiver em manutenção e/ou fora do ar. 	| Verificar se aparecerá uma mensagem na tela. 	| Acessar a página principal da aplicação. 	| Uma mensagem aparecerá na tela quando a aplicação estiver em manutenção e/ou fora do ar. 	|
+| CT-18 – Usabilidade 	| RNF-013 - O sistema deverá ter uma fácil usabilidade para o usuário. 	| Verificar se a aplicação é fácil de usar. 	| 1 - Acessar a página principal da aplicação;<br> 2 - Navegar em todas as páginas para verificar se é de fácil uso. 	| Usuários de qualquer idade devem conseguir usar a aplicação. 	|
