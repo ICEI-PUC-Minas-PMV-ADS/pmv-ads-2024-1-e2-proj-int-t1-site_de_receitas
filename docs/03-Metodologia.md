@@ -6,8 +6,7 @@ Nesta sessão mostramos o processo e as ferramentas utilizadas pela equipe para 
 ## Controle de Versão
 
 A ferramenta de controle de versão adotada no projeto foi o
-[Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-foi utilizado para hospedagem do repositório.
+[Git](https://git-scm.com/). O projeto segue sendo desenvolvido possuindo a branch `main` como branch principal de desenvolvimento. Para cada implementação, cria-se uma branch a partir `main` para então mesclá-la de volta à branch `main` quando a nova implementação estiver finalizada.
 
 ## Gerenciamento de Projeto
 
