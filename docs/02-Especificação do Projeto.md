@@ -150,6 +150,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-007| O sistema deve ser desenvolvido utilizando práticas recomendadas de clean code | Média |
 |RNF-008| O sistema deve ser executado nos navegadores Google Chrome, Opera e Edge | Média
 |RNF-009| O sistema deve continuar funcionando apresentando conteúdo já carregado em caso de queda de conexão ou instabilidade no banco de dados | Média |
+|RNF-010| O sistema deve ser responsivo. | Média |
+|RNF-011| Osistema deve ser acessível pela internet. | Alta |
+|RNF-012| O sistema deverá informar ao usuário quando o mesmo estiver em manutenção e/ou fora do ar. | Baixa |
+|RNF-013|  sistema deverá ter uma fácil usabilidade para o usuário. | Baixa |
+
 
 ------
 
