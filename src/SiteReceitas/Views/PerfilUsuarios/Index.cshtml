@@ -9,6 +9,7 @@
 <p>
     <a class="btn btn-success" asp-action="Create">Novo usuário</a>
 </p>
+
 <table class="table">
     <thead>
         <tr>
@@ -42,11 +43,15 @@
             <td>
                 @Html.DisplayFor(modelItem => item.TipoPerfil)
             </td>
-            <td>
-                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
-                    <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
-                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
-            </td>
+
+            @if(User.IsInRole("Autor"))
+            {
+                <td>
+                        <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                        <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
+                </td>
+            }
         </tr>
 }
     </tbody>

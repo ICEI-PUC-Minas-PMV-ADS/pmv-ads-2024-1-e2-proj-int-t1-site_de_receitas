@@ -59,6 +59,7 @@ namespace SiteReceitas.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Autor")]
         public async Task<IActionResult> Create([Bind("Id,NomeReceita,ModoPreparo,IngredienteId")] Receita receita, IFormFile imagem)
         {
             if (ModelState.IsValid)
