@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -45,6 +46,8 @@ namespace SiteReceitas.Controllers
         }
 
         // GET: Receitas/Create
+        [Authorize(Roles = "Autor")]
+       
         public IActionResult Create()
         {
             ViewData["IngredienteId"] = new SelectList(_context.Ingrediente, "Id", "NomeIngrediente");

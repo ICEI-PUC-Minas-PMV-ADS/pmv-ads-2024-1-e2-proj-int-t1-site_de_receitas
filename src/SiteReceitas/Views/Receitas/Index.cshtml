@@ -6,9 +6,18 @@
 
 <h1>Receitas</h1>
 
+@if(User.IsInRole("Autor"))
+{
+    <p>
+        <a asp-action="Create" class="btn btn-success">Criar Receita</a>
+    </p>
+}
+
+@* 
 <p>
     <a asp-action="Create" class="btn btn-success">Criar Receita</a>
-</p>
+</p> *@
+
 <table class="table">
     <thead>
         <tr>

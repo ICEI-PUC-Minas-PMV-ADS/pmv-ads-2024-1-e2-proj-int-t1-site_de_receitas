@@ -20,8 +20,8 @@ builder.Services.Configure<CookiePolicyOptions>(options =>
 builder.Services.AddAuthentication(Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
-        options.AccessDeniedPath = "/";
-        options.LoginPath = "/Usuarios/Login/";
+        options.AccessDeniedPath = "/PerfilUsuarios/AccessDenied/";
+        options.LoginPath = "/PerfilUsuarios/Login/";
     });
 
 var app = builder.Build();

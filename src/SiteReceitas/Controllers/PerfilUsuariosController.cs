@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +12,7 @@ using SiteReceitas.Models;
 
 namespace SiteReceitas.Controllers
 {
+    [Authorize]
     public class PerfilUsuariosController : Controller
     {
         private readonly AppDBContext _context;
@@ -26,11 +28,13 @@ namespace SiteReceitas.Controllers
             return View(await _context.PerfilUsuario.ToListAsync());
         }
 
+        [AllowAnonymous]
         public IActionResult Login() // GET Login 
         {
             return View();
         }
 
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Login(PerfilUsuario perfilUsuario)
         {
@@ -75,6 +79,7 @@ namespace SiteReceitas.Controllers
             return View();
         }
 
+        [AllowAnonymous]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();

@@ -23,6 +23,7 @@ namespace SiteReceitas.Models
         public Ingrediente Ingrediente { get; set; }
 
         public ICollection<Avaliacao> Avaliacoes { get; set; }
+
         [Display(Name = "Imagem")]
         public byte[] Imagem { get; set; }
     }
