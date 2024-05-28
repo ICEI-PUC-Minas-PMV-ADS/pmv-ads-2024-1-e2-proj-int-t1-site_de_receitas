@@ -1,0 +1,123 @@
+﻿body {
+    background-color: #370466;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 99%;
+    margin: 0 auto;
+    background-color: #370466;
+    padding: 1%;
+}
+
+.logo {
+    font-family: 'Gistesy', sans-serif;
+    font-size: 40px;
+    color: #fff;
+}
+
+.navbar {
+    font-size: 20px margin-right: 30px;
+}
+
+    .navbar ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+
+    .navbar li {
+        margin-right: 20px;
+        font-size: 25px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        margin-top: 10px;
+    }
+
+        .navbar ul {
+            flex-direction: column;
+        }
+
+        .navbar li {
+            margin: 5px 0;
+        }
+}
+
+/* imagem principal */
+.image-section {
+    max-width: 99%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+    .image-section img {
+        width: 100%;
+        height: auto;
+    }
+
+
+/* Secao-de-imagens */
+.secao-de-imagens {
+    max-width: 99%;
+    padding: 1%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.imagem-container {
+    text-align: center;
+    background-color: #370466;
+}
+
+    .imagem-container .imagem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+    }
+
+        .imagem-container .imagem img {
+            max-width: 100%;
+            max-height: 100%;
+            cursor: pointer;
+        }
+
+    .imagem-container .titulo {
+        padding: 10px;
+    }
+
+        .imagem-container .titulo h1 {
+            color: #fff;
+            margin: 0;
+        }
+
+@media screen and (max-width: 768px) {
+    .secao-de-imagens {
+        flex-direction: column;
+    }
+
+    .imagem-container {
+        flex: 0 0 100%;
+    }
+}
