@@ -3,20 +3,12 @@
 @{
     ViewData["Title"] = "Index";
 }
-
-<h1>Ingredientes</h1>
-
 <p>
     <a class="btn btn-success" asp-action="Create">Cadastrar Ingrediente</a>
 </p>
 <table class="table">
     <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.NomeIngrediente)
-            </th>
-            <th></th>
-        </tr>
+        
     </thead>
     <tbody>
 @foreach (var item in Model) {
@@ -33,3 +25,143 @@
 }
     </tbody>
 </table>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredientes - Receitas Deliciosas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+            nav a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+
+                nav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        .search {
+            margin: 20px 0;
+        }
+
+            .search input[type="text"] {
+                width: calc(100% - 22px);
+                padding: 10px;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+            }
+
+        .ingredients {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .ingredient {
+            background: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: calc(33% - 40px);
+        }
+
+            .ingredient img {
+                width: 100%;
+                border-radius: 8px;
+            }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Ingredientes</h1>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="search">
+            <input type="text" placeholder="Buscar ingredientes...">
+        </div>
+
+        <div class="ingredients">
+            <div class="ingredient">
+                <img src="https://via.placeholder.com/300x200" alt="Farinha de Trigo">
+                <h3>Farinha de Trigo</h3>
+                <p>A farinha de trigo é um ingrediente essencial em muitas receitas de pães, bolos e biscoitos.</p>
+            </div>
+            <div class="ingredient">
+                <img src="https://via.placeholder.com/300x200" alt="Açúcar">
+                <h3>Açúcar</h3>
+                <p>O açúcar é usado para adoçar sobremesas, bebidas e muitas outras receitas culinárias.</p>
+            </div>
+            <div class="ingredient">
+                <img src="https://via.placeholder.com/300x200" alt="Ovos">
+                <h3>Ovos</h3>
+                <p>Os ovos são um ingrediente versátil usado em uma variedade de pratos, desde sobremesas até pratos principais.</p>
+            </div>
+            <div class="ingredient">
+                <img src="https://via.placeholder.com/300x200" alt="Leite">
+                <h3>Leite</h3>
+                <p>O leite é um ingrediente comum em muitas receitas, proporcionando sabor e textura.</p>
+            </div>
+            <div class="ingredient">
+                <img src="https://via.placeholder.com/300x200" alt="Manteiga">
+                <h3>Manteiga</h3>
+                <p>A manteiga adiciona sabor e uma textura rica a muitas receitas de panificação e cozinha.</p>
+            </div>
+            <div class="ingredient">
+                <img src="https://via.placeholder.com/300x200" alt="Chocolate">
+                <h3>Chocolate</h3>
+                <p>O chocolate é um ingrediente delicioso usado em sobremesas, bebidas e muitos outros pratos.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
