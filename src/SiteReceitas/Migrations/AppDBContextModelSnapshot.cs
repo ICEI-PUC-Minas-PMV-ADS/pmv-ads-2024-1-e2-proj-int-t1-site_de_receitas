@@ -121,8 +121,6 @@ namespace SiteReceitas.Migrations
                     b.ToTable("Receitas");
                 });
 
-            
-// <<<<<<< BeAlves-Branch
             modelBuilder.Entity("SiteReceitas.Models.Avaliacao", b =>
                 {
                     b.HasOne("SiteReceitas.Models.Receita", "Receita")
@@ -134,18 +132,16 @@ namespace SiteReceitas.Migrations
                     b.Navigation("Receita");
                 });
 
-// =======
-// >>>>>>> main
-//             modelBuilder.Entity("SiteReceitas.Models.Receita", b =>
-//                 {
-//                     b.HasOne("SiteReceitas.Models.Ingrediente", "Ingrediente")
-//                         .WithMany()
-//                         .HasForeignKey("IngredienteId")
-//                         .OnDelete(DeleteBehavior.Cascade)
-//                         .IsRequired();
+            modelBuilder.Entity("SiteReceitas.Models.Receita", b =>
+                {
+                    b.HasOne("SiteReceitas.Models.Ingrediente", "Ingrediente")
+                        .WithMany()
+                        .HasForeignKey("IngredienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-//                     b.Navigation("Ingrediente");
-//                 });
+                    b.Navigation("Ingrediente");
+                });
 
             modelBuilder.Entity("SiteReceitas.Models.Receita", b =>
                 {
