@@ -31,9 +31,12 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Avaliacoes" asp-action="Index">Avaliacoes</a>
                         </li>
-                        <li>                    
-                            <a class="nav-link text-dark" asp-area="" asp-controller="PerfilUsuarios" asp-action="Index">Usuarios</a>
-                        </li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Receitas" asp-action="Create">Criar Receita</a>
+                            </li>
+                        }
                      </ul>
                      <ul class="navbar-nav">
 
@@ -51,8 +54,12 @@
                          else
                          {
                              <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="PerfilUsuarios" asp-action="Create">Cadastrar</a>
+                             </li>
+                             <li class="nav-item">
                                  <a class="nav-link text-dark" asp-area="" asp-controller="PerfilUsuarios" asp-action="Login">Login</a>
                              </li>
+
                          }
                      </ul>
                 </div>
