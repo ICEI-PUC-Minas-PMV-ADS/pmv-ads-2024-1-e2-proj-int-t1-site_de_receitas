@@ -28,15 +28,15 @@ Por exemplo:
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-003 - O sistema deve permitir que usuários adicionem avaliações às receitas por meio de notas que variam de um número à outro (ex: 0 à 5). |
 | Objetivo do Teste 	| Verificar se o usuário conseguirá atribuir uma nota a receita. |
-| Passos 	| - Acessar a página de uma receita específica <br> - Adicionar uma avaliação com uma nota válida (entre 0 e 5) <br> - Verificar se a avaliação é exibida na receita <br> - Clicar em "Confirmar a nota" |
+| Passos 	| - Acessar a página de uma receita específica <br> - Adicionar uma avaliação com uma nota válida (Ruim, Bom, Ótimo) <br> - Verificar se a avaliação é exibida na receita <br> - Clicar em "Confirmar a nota" |
 |Critério de Êxito | - A avaliação será exibida na tela. |
  
 | **Caso de Teste** 	| **CT-04 – Pesquisar receita** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-004 -  O sistema deve permitir que o usuário pesquise por receitas cadastradas através de seus ingredientes ou nomes. |
-| Objetivo do Teste 	| Verificar a função de busca por receitas ou ingredientes. |
-| Passos 	| - Acessar a página de pesquisa de receitas <br> -  Inserir um nome de receita ou ingrediente na barra de pesquisa <br> - Verificar se as receitas relevantes são exibidas nos resultados da pesquisa <br>  |
-|Critério de Êxito | - o nome da receita ou ingredientes digitados retornam as receitas salvas no banco de dados. |
+|	Requisito Associado 	| RF-004 -  O sistema deve permitir que o usuário cadastre novos ingredientes.|
+| Objetivo do Teste 	| Verificar a função de cadastro de ingredientes. |
+| Passos 	| - Acessar a página de ingredientes <br> -  Acessar a opção de cadastrar novo<br> - Preencher os dados pedidos e salvar <br> - Verificar os ingredientes exibidos  |
+|Critério de Êxito | - O ingrediente cadastrado deve passar a ter uma ID e ser exibido adequadamente. |
 
 | **Caso de Teste** 	| **CT-05 – Edição de receitas** 	|
 |:---:	|:---:	|
@@ -47,9 +47,9 @@ Por exemplo:
 
 | **Caso de Teste** 	| **CT-06 – Edição de Usuário** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-006: O sistema deve permitir que o usuário edite seus próprios dados |
+|	Requisito Associado 	| RF-006: O sistema deve permitir que o usuário edite seus  dados |
 | Objetivo do Teste 	| Verificar a função de editar dados do usuário. |
-| Passos 	| - Ser um usuário cadastrado. <br> -  Acessar a tela de editar perfil. <br> - Alterar as informações: nome, e-mail, senha e especificação culinaria. <br> - Salvar usuário. <br> - Aceesar tela perfil do usuário. <br>  |
+| Passos 	| - Ser um usuário cadastrado. <br> -  Acessar a tela de usuários. <br> - Alterar as informações: nome, e-mail, senha e especificação culinaria. <br> - Salvar usuário. <br> - Aceesar tela de usuarios. <br>  |
 |Critério de Êxito | -   Usuário foi editado com sucesso. |
 
 | **Caso de Teste** 	| **CT-07 – Desfazer avaliação de receita** 	|
@@ -68,17 +68,17 @@ Por exemplo:
 
 | **Caso de Teste** 	| **CT-09 - Lista de Receitas de autoria do Usuário** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-009: O sistema deve fornecer ao usuário uma lista com todas as receitas já cadastradas por ele |
-| Objetivo do Teste 	| Confirmar a visualização das receitas criadas pelo usuário |
-| Passos 	| Usuário deve estar logado <br> - Navegar até: [Nome Usuário] > Minhas Receitas |
-| Critério de Êxito | A lista de receitas cadastradas pelo usuário deve ser exibida |
+|	Requisito Associado 	| RF-009: O sistema deve permitir que o usuário edite ingredientes já cadastrados |
+| Objetivo do Teste 	| Confirmar a edição de ingredientes|
+| Passos 	| Usuário deve estar logado <br> - Navegar até: Ingredientes e editar um ingrediente |
+| Critério de Êxito | O ingrediente deve passar a refletir as novas informações tanto em ingrediente quanto nas receitas onde está cadastrado |
 
 | **Caso de Teste** 	| **CT-10 Exclusão** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-010: O sistema deve permitir que usuário exclua receitas por ele cadastradas |
-| Objetivo do Teste 	| Confirmar a exclusão da receita |
-| Passos 	| O usuário deve estar logado <br> - Navegar até: [Nome Usuário] > Minhas receitas <br> - Selecionar receita a ser excluída e clicar em excluir <br> - Confirmar que deseja excluir <br> - Navegar até: [Nome Usuário] > Minhas receitas |
-| Critério de Êxito | A receita não deve mais constar na listagem após a exclusão |
+|	Requisito Associado 	| RF-010: O sistema deve permitir que usuário exclua ingredientes |
+| Objetivo do Teste 	| Confirmar a exclusão de ingredientes |
+| Passos 	| O usuário deve estar logado <br> - Navegar até: Ingredientes <br> - Selecionar ingrediente a ser excluída e clicar em excluir <br> - Confirmar que deseja excluir <br> - Navegar até: Ingredientes |
+| Critério de Êxito | O ingrediente não deve mais constar na listagem após a exclusão |
 
 
 ------------------
