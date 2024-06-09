@@ -7,23 +7,23 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-01 – Cadastrar Usuário** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-001: O sistema deve permitir que o usuário se cadastre. |
-|Registro de evidência | [Teste 1](https://drive.google.com/file/d/1Vs3ouv7H6yx2gXAk8Du1BXCTNSUjr0Ho/view?usp=sharing) e [Teste 2](https://drive.google.com/file/d/1W9hhcPPiycbWOIJnqJkcbgVIg3ao_WPh/view?usp=sharing) |
-|Resultado | FALHA - Em um dos testes o usuário tentou acessar o cadastro de usuário através do LOGIN e ficou confuso. No outro tentou acessar a lista de usuários e apresentou erro. |
-|Ação | Corrigir o erro da lista de usuários e implementar um botão que leve para o cadastro no login. |
+|Registro de evidência | - |
+|Resultado | - |
+|Ação | - |
 
 | **Caso de Teste** 	| **CT-02 - Cadastro de receitas** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-002: O sistema deve permitir que o usuário cadastre novas receitas com o nome dessas receitas e seus respectivos ingredientes e modos de preparo. |
-|Registro de evidência | [Teste 1](https://drive.google.com/file/d/1tgMhaTJML-TRLhNvde1qD0kbBd8628dI/view?usp=sharing) |
-|Resultado | FALHA - não gravou |
+|Registro de evidência | -|
+|Resultado | - |
 |Ação | Já foi detectado que é um problema na tabela de imagens, correções em andamento.|
 
 | **Caso de Teste** 	| **CT-03 – Avaliar receita** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-003 - O sistema deve permitir que usuários adicionem avaliações às receitas por meio de notas que variam de um número à outro (ex: 0 à 5). |
 |Registro de evidência | - |
-|Resultado | Impedimento de teste em ct2. |
-|Ação | Correção de ct2 |
+|Resultado | - |
+|Ação | - |
 
 | **Caso de Teste** 	| **CT-04 – Pesquisar receita** 	|
 |:---:	|:---:	|
@@ -36,22 +36,22 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-005: O sistema deve permitir que o usuário edite receitas já cadastradas. |
 |Registro de evidência | - |
-|Resultado | Impedimento de teste em ct2. |
-|Ação | Correção de ct2 |
+|Resultado | -|
+|Ação | - |
 
 | **Caso de Teste** 	| **CT-06 – Edição de Usuário** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-006: O sistema deve permitir que o usuário edite seus próprios dados |
 |Registro de evidência | - |
-|Resultado | Impedimento de teste em ct1.  |
-|Ação | Correção de ct1. |
+|Resultado | -  |
+|Ação | -|
 
 | **Caso de Teste** 	| **CT-06 – Edição de Usuário** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-006: O sistema deve permitir que o usuário edite seus próprios dados |
 |Registro de evidência | - |
-|Resultado | Impedimento de teste em ct1. |
-|Ação | Correção de ct1. |
+|Resultado | - |
+|Ação | - |
 
 | **Caso de Teste** 	| **CT-07 – Desfazer avaliação de receita** 	|
 |:---:	|:---:	|
@@ -67,35 +67,82 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 |Resultado | Impedimento de teste em ct1. |
 |Ação | Correção de ct1. |
 
-| **Caso de Teste** 	| **CT-09 - Lista de Receitas de autoria do Usuário** 	|
+| **Caso de Teste** 	| **CT-09 - CT-09 - Edição de Ingredientes** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-009: O sistema deve fornecer ao usuário uma lista com todas as receitas já cadastradas por ele |
+|	Requisito Associado 	| RF-009: O sistema deve permitir que o usuário edite ingredientes já cadastrados |
 |Registro de evidência | - |
 |Resultado | Não implementado  |
 |Ação | Previsto para a próxima etapa. |
 
-| **Caso de Teste** 	| **CT-10 Exclusão** 	|
+| **Caso de Teste** 	| **CT-10 Exclusão de Ingredientes** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-010: O sistema deve permitir que usuário exclua receitas por ele cadastradas |
+|	Requisito Associado 	| RF-010: O sistema deve permitir que usuário exclua ingredientes |
 |Registro de evidência | - |
 |Resultado | Impedimento de teste em ct2. |
 |Ação | Correção de ct2 |
 
-| **Caso de Teste** 	| **CT-11 Arquitetura e Framework** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RNF-002: O sistema deve ser desenvolvido utilizando a arquitetura MVC |
-|	Requisito Associado 	| RNF-003: O sistema deve ser desenvolvido utilizando o framework ASP.NET Core MVC. |
-|Registro de evidência | - |
-|Resultado | CONFIRMADO. |
-|Ação | |
-
-| **Caso de Teste** 	| **CT-12 Privacidade de dados** 	|
+| **Caso de Teste** 	| **CT-11 Privacidade de dados** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RNF-001: O sistema não deve expor dados sensíveis do usuário |
 |Registro de evidência | - |
 |Resultado | Não implementado  |
 |Ação | Previsto para a próxima etapa. |
 
+| **Caso de Teste** 	| **CT-12 Arquitetura e Framework** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RNF-002: O sistema deve ser desenvolvido utilizando a arquitetura MVC |
+|Registro de evidência | - |
+|Resultado | - |
+|Ação | |
+
+| **Caso de Teste** 	| **CT-13 Framework de desenvolvimento** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RNF-003: O sistema deve ser desenvolvido utilizando o framework ASP.NET Core MVC. |
+|Registro de evidência | - |
+|Resultado | - |
+|Ação | - |
+
+| **Caso de Teste** 	| **CT-14 Sistema Multiusuário 1** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RNF-004: O sistema deve ser capaz de lidar com vários usuários simultâneos sem sofrer degradações significativas no desempenho. |
+|Registro de evidência | - |
+|Resultado | - |
+|Ação | - |
+
+| **Caso de Teste** 	| **CT-15 Sistema Multiusuário 2** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RNF-005: O sistema deve suportar múltiplos usuários simultaneamente. |
+|Registro de evidência | - |
+|Resultado | - |
+|Ação | - |
+
+| **Caso de Teste** 	| **CT-16 Tempo de Resposta** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RNF-006: O sistema não deve ter tempo médio de resposta superior a 5s. |
+|Registro de evidência | - |
+|Resultado | - |
+|Ação | - |
+
+| **Caso de Teste** 	| **CT-17 Clean Code** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RFN - 007: O sistema deve ser desenvolvido utilizando práticas recomendadas de clean code. |
+|Registro de evidência | - |
+|Resultado | - |
+|Ação | - |
+
+| **Caso de Teste** 	| **CT-18 Testar em diferentes navegadores** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RNF-008 - O sistema deve ser executado nos navegadores Google Chrome, Opera e Edge. |
+|Registro de evidência | - |
+|Resultado | - |
+|Ação | - |
+
+| **Caso de Teste** 	| **CT-19 Tempo de Resposta** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RFN - 010: O sistema deve continuar funcionando apresentando conteúdo já carregado em caso de queda de conexão ou instabilidade no banco de dados. |
+|Registro de evidência | - |
+|Resultado | - |
+|Ação | - |
 
 
 
