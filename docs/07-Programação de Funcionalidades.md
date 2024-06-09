@@ -7,7 +7,7 @@ Implementação do sistema descrita por meio dos requisitos funcionais e/ou não
 
 
 |ID    | Descrição do Requisito  | Artefato(s) Produzido(s) | Acesso à Funcionalidade |
-|------|-----------------------------------------|----|
+|------|-----------------------------------------|----|---|
 |RF-001| O sistema deve permitir que o usuário se cadastre |  Create.cshtml; PerfilUsuariosController.cs; PerfilUsuario.cs | [Cadastro de Usuário](https://sitereceitasadse2.azurewebsites.net/PerfilUsuarios/Create)  |  
 |RF-002| O sistema deve permitir que o usuário cadastre novas receitas com o nome dessas receitas e seus respectivos ingredientes e modos de preparo |  Receitas/Create.cshtml; Receita.cs; ReceitasController.cs   | [Cadastro de Receita](https://sitereceitasadse2.azurewebsites.net/Receitas/Create)  |  
 |RF-003| O sistema deve permitir que usuários adicionem avaliações às receitas por meio de notas que variam de um número à outro (ex: 0 à 5) |  Avaliacoes/Create.cshtml; Avalicao.cs AvaliacoesController.cs; ReceitasController.cs; Receitas/Create.cshtml | [Cadastro de Avaliações](https://sitereceitasadse2.azurewebsites.net/Avaliacoes/Create)  |  
