@@ -5,7 +5,7 @@
 namespace SiteReceitas.Migrations
 {
     /// <inheritdoc />
-    public partial class _1 : Migration
+    public partial class create : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
