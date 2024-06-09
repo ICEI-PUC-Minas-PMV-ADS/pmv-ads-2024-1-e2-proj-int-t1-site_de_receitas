@@ -4,12 +4,22 @@
 
 Implementação do sistema descrita por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos com os artefatos criados (código fonte), deverão apresentadas as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
 
-Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos desenvolvidos.
 
-|ID    | Descrição do Requisito  | Artefato(s) produzido(s) |
+
+|ID    | Descrição do Requisito  | Artefato(s) Produzido(s) |
 |------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | tarefas.shtml / tarefas.cs / controllertarefas.cs | 
-|RF-002| A aplicação deve permitir a emissão de um relatório de tarefas realizadas no mês   | relatorio.shtml |
+|RF-001| O sistema deve permitir que o usuário se cadastre |     | 
+|RF-002| O sistema deve permitir que o usuário cadastre novas receitas com o nome dessas receitas e seus respectivos ingredientes e modos de preparo |     |
+|RF-003| O sistema deve permitir que usuários adicionem avaliações às receitas por meio de notas que variam de um número à outro (ex: 0 à 5) |     |
+|RF-004| O sistema deve permitir que o usuário pesquise por receitas cadastradas através de seus ingredientes ou nomes |     |
+|RF-005| O sistema deve permitir que o usuário edite receitas já cadastradas |     |
+|RF-006| O sistema deve permitir que o usuário edite seus próprios dados |     |
+|RF-007| O sistema deve permitir que o usuário desfaça sua avalição |     |
+|RF-008| O sistema deve permitir que o usuário exclua seu perfil |     |
+|RF-009| O sistema deve fornecer ao usuário uma lista com todas as receitas já cadastradas por ele |     |
+|RF-010| O sistema deve permitir que usuário exclua receitas por ele cadastradas |     |
+|RF-011| O sistema deve permitir que usuário modifique a avaliação que ele fez anteriormente sobre determinada receita |     |
+
 
 # Instruções de acesso
 
