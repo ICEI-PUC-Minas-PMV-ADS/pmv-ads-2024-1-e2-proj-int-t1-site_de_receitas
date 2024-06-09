@@ -6,29 +6,29 @@ Implementação do sistema descrita por meio dos requisitos funcionais e/ou não
 
 
 
-|ID    | Descrição do Requisito  | Artefato(s) Produzido(s) |
+|ID    | Descrição do Requisito  | Artefato(s) Produzido(s) | Acesso à Funcionalidade |
 |------|-----------------------------------------|----|
-|RF-001| O sistema deve permitir que o usuário se cadastre |  Create.cshtml; PerfilUsuariosController.cs; PerfilUsuario.cs   | 
-|RF-002| O sistema deve permitir que o usuário cadastre novas receitas com o nome dessas receitas e seus respectivos ingredientes e modos de preparo |  Receitas/Create.cshtml; Receita.cs; ReceitasController.cs   |
-|RF-003| O sistema deve permitir que usuários adicionem avaliações às receitas por meio de notas que variam de um número à outro (ex: 0 à 5) |  Avaliacoes/Create.cshtml; Avalicao.cs AvaliacoesController.cs; ReceitasController.cs; Receitas/Create.cshtml |
-|RF-004| O sistema deve permitir que o usuário pesquise por receitas cadastradas através de seus ingredientes ou nomes | ReceitasController.cs; Receita.cs;  Receitas/Index.cshtml |
-|RF-005| O sistema deve permitir que o usuário edite receitas já cadastradas | Receitas/Edit.cshtml; ReceitasController.cs; Receita.cs;  |
-|RF-006| O sistema deve permitir que o usuário edite seus próprios dados | PerfilUsuarios/Edit.cshtml; PerfilUsuario.cs; PerfilUsuariosController.cs |
-|RF-007| O sistema deve permitir que o usuário desfaça sua avalição |  AvaliacaoController.cs; Avaliacoes/Delete.cshtml; Avaliacao.cs  |
-|RF-008| O sistema deve permitir que o usuário exclua seu perfil |  PerfilUsuario/Delete.cshtml; PerfilUsuariosController.cs; PerfilUsuario.cs |
-|RF-009| O sistema deve fornecer ao usuário uma lista com todas as receitas já cadastradas por ele |  Receitas/Index.cshtml; ReceitasController.cs; Receita.cs   |
-|RF-010| O sistema deve permitir que usuário exclua receitas por ele cadastradas |  ReceitasController.cs; Receita.cs; Receitas/Delete.cshtml |
-|RF-011| O sistema deve permitir que usuário modifique a avaliação que ele fez anteriormente sobre determinada receita |  Avalicaoes/Edit.cshtml;  AvaliacaoController.cs; Avaliacao.cs |
+|RF-001| O sistema deve permitir que o usuário se cadastre |  Create.cshtml; PerfilUsuariosController.cs; PerfilUsuario.cs | [Cadastro de Usuário](https://sitereceitasadse2.azurewebsites.net/PerfilUsuarios/Create)  |  
+|RF-002| O sistema deve permitir que o usuário cadastre novas receitas com o nome dessas receitas e seus respectivos ingredientes e modos de preparo |  Receitas/Create.cshtml; Receita.cs; ReceitasController.cs   | [Cadastro de Receita](https://sitereceitasadse2.azurewebsites.net/Receitas/Create)  |  
+|RF-003| O sistema deve permitir que usuários adicionem avaliações às receitas por meio de notas que variam de um número à outro (ex: 0 à 5) |  Avaliacoes/Create.cshtml; Avalicao.cs AvaliacoesController.cs; ReceitasController.cs; Receitas/Create.cshtml | [Cadastro de Avaliações](https://sitereceitasadse2.azurewebsites.net/Avaliacoes/Create)  |  
+|RF-004| O sistema deve permitir que o usuário cadastre novos ingredientes | IngredientesController.cs; Ingrediente.cs;  Ingredientes/Index.cshtml | [Ingredientes](https://sitereceitasadse2.azurewebsites.net/Ingredientes/Create)  |  
+|RF-005| O sistema deve permitir que o usuário edite receitas já cadastradas | Receitas/Edit.cshtml; ReceitasController.cs; Receita.cs;  | [Edição Receitas](https://sitereceitasadse2.azurewebsites.net/Receitas)  |  
+|RF-006| O sistema deve permitir que o usuário edite seus dados | PerfilUsuarios/Edit.cshtml; PerfilUsuario.cs; PerfilUsuariosController.cs | [Cadastro de Usuário](https://sitereceitasadse2.azurewebsites.net/PerfilUsuarios)  |  
+|RF-007| O sistema deve permitir que o usuário desfaça sua avalição |  AvaliacaoController.cs; Avaliacoes/Delete.cshtml; Avaliacao.cs  | [Deletar Avaliação](https://sitereceitasadse2.azurewebsites.net/Avaliacoes)  |  
+|RF-008| O sistema deve permitir que o usuário exclua seu perfil |  PerfilUsuario/Delete.cshtml; PerfilUsuariosController.cs; PerfilUsuario.cs | [Deletar de Usuário](https://sitereceitasadse2.azurewebsites.net/PerfilUsuarios)  |  
+|RF-009| O sistema deve permitir que o usuário edite ingredientes já cadastrados |  Ingredientes/Edit.cshtml; IngredientesController.cs; Ingrediente.cs;   | [Editar Ingredientes](https://sitereceitasadse2.azurewebsites.net/Ingredientes)  |  
+|RF-010| O sistema deve permitir que usuário exclua ingredientes |  IngredientesController.cs; Ingrediente.cs; Ingredientes/Delete.cshtml | [Deletar Ingredientes](https://sitereceitasadse2.azurewebsites.net/Ingredientes)  |  
+|RF-011| O sistema deve permitir que usuário modifique a avaliação que ele fez anteriormente sobre determinada receita |  Avalicaoes/Edit.cshtml;  AvaliacaoController.cs; Avaliacao.cs | [Editar Avaliação](https://sitereceitasadse2.azurewebsites.net/Avaliacoes)  |  
 
 
 # Instruções de acesso
 
-Não deixe de informar o link onde a aplicação estiver disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
+[Site de Receitas](https://sitereceitasadse2.azurewebsites.net/)  |  
 
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
+É possível criar um usuários de teste. Já está disponível o usuário: teste@user.com pw: 123
 
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
-
+---
+<!--
 > **Links Úteis**:
 >
 > - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
@@ -36,3 +36,4 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 > - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
 > - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
 > - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+->
