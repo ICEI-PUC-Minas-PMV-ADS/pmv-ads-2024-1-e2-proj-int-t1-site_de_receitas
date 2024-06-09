@@ -151,6 +151,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 ## Avaliação
 
 Os resultados dos testes indicam que há problemas em partes fundamentais do sistema, com correções já em andamento, e algumas melhorias de usabilidade a ser implementadas. Também mostram que as propostas de desenvolvimento estão sendo seguidas, mesmo que ainda em andamento.
-
+<!--
 > **Links Úteis**:
 > - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+-->
