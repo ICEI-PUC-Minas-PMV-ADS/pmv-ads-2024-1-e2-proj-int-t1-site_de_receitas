@@ -126,15 +126,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |------|-----------------------------------------|----|
 |RF-001| O sistema deve permitir que o usuário se cadastre | Alta | 
 |RF-002| O sistema deve permitir que o usuário cadastre novas receitas com o nome dessas receitas e seus respectivos ingredientes e modos de preparo | Alta |
-|RF-003| O sistema deve permitir que usuários adicionem avaliações às receitas por meio de notas que variam de um número à outro (ex: 0 à 5) | Alta |
-|RF-004| O sistema deve permitir que o usuário pesquise por receitas cadastradas através de seus ingredientes ou nomes | Alta |
+|RF-003| O sistema deve permitir que usuários adicionem avaliações às receitas por meio de notas que variam entre Ruim, Bom e Ótimo | Alta |
+|RF-004| O sistema deve permitir que o usuário cadastre novos ingredientes | Alta |
 |RF-005| O sistema deve permitir que o usuário edite receitas já cadastradas | Alta |
-|RF-006| O sistema deve permitir que o usuário edite seus próprios dados | Alta |
+|RF-006| O sistema deve permitir que o usuário edite seus dados | Alta |
 |RF-007| O sistema deve permitir que o usuário desfaça sua avalição | Alta |
 |RF-008| O sistema deve permitir que o usuário exclua seu perfil | Alta |
-|RF-009| O sistema deve fornecer ao usuário uma lista com todas as receitas já cadastradas por ele | Alta |
-|RF-010| O sistema deve permitir que usuário exclua receitas por ele cadastradas | Alta |
-|RF-011| O sistema deve permitir que usuário modifique a avaliação que ele fez anteriormente sobre determinada receita | Média |
+|RF-009| O sistema deve permitir que o usuário edite ingredientes já cadastrados | Alta |
+|RF-010| O sistema deve permitir que usuário exclua ingredientes| Alta |
+|RF-011| O sistema deve permitir que usuário modifique a avaliação feitas sobre determinada receita | Média |
 
 
 ### Requisitos não Funcionais
@@ -151,7 +151,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-008| O sistema deve ser executado nos navegadores Google Chrome, Opera e Edge | Média
 |RNF-009| O sistema deve continuar funcionando apresentando conteúdo já carregado em caso de queda de conexão ou instabilidade no banco de dados | Média |
 |RNF-010| O sistema deve ser responsivo. | Média |
-|RNF-011| Osistema deve ser acessível pela internet. | Alta |
+|RNF-011| O sistema deve ser acessível pela internet. | Alta |
 |RNF-012| O sistema deverá informar ao usuário quando o mesmo estiver em manutenção e/ou fora do ar. | Baixa |
 |RNF-013|  sistema deverá ter uma fácil usabilidade para o usuário. | Baixa |
 
