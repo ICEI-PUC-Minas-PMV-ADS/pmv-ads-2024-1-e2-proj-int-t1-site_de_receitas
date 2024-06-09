@@ -11,8 +11,8 @@ using SiteReceitas.Models;
 namespace SiteReceitas.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    [Migration("20240609194818_create")]
-    partial class create
+    [Migration("20240609223418_1")]
+    partial class _1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
