@@ -10,7 +10,7 @@ Após a realização dos testes de usabilidade, obteve-se o seguinte relatório 
 |Resultado |  |
 |Ação |  |
 
-| **Caso de Teste** 	| **CT-14 – Compatibilidade de navegadores** 	|
+| **Caso de Teste** 	| **CT-14 – Persistência de Funcionamento** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RNF-009 - OO sistema deve continuar funcionando apresentando conteúdo já carregado em caso de queda de conexão ou instabilidade no banco de dados |
 |Registro de evidência | |
