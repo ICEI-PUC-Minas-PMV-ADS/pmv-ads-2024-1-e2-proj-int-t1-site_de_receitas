@@ -31,7 +31,7 @@ Por exemplo:
 | Passos 	| - Acessar a página de uma receita específica <br> - Adicionar uma avaliação com uma nota válida (Ruim, Bom, Ótimo) <br> - Verificar se a avaliação é exibida na receita <br> - Clicar em "Confirmar a nota" |
 |Critério de Êxito | - A avaliação será exibida na tela. |
  
-| **Caso de Teste** 	| **CT-04 – Pesquisar receita** 	|
+| **Caso de Teste** 	| **CT-04 – Cadastrar Ingrediente** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-004 -  O sistema deve permitir que o usuário cadastre novos ingredientes.|
 | Objetivo do Teste 	| Verificar a função de cadastro de ingredientes. |
@@ -66,14 +66,14 @@ Por exemplo:
 | Passos 	| - Acessar página de perfil. <br> -  Clicar em "Excluir conta". <br> - Verificar existência de mensagem de aviso sobre o sucesso na exclusão. <br> - Verificar se houve o redirecionamento à tela de login. <br> -Verificar se, preenchendo o formulário com os dados da conta excluída, as credenciais não são reconhecidas. <br>|
 |Critério de Êxito | - Credenciais de conta excluída não são mais reconhecidas pelo sistema. |
 
-| **Caso de Teste** 	| **CT-09 - Lista de Receitas de autoria do Usuário** 	|
+| **Caso de Teste** 	| **CT-09 - Edição de Ingredientes** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-009: O sistema deve permitir que o usuário edite ingredientes já cadastrados |
 | Objetivo do Teste 	| Confirmar a edição de ingredientes|
 | Passos 	| Usuário deve estar logado <br> - Navegar até: Ingredientes e editar um ingrediente |
 | Critério de Êxito | O ingrediente deve passar a refletir as novas informações tanto em ingrediente quanto nas receitas onde está cadastrado |
 
-| **Caso de Teste** 	| **CT-10 Exclusão** 	|
+| **Caso de Teste** 	| **CT-10 Exclusão de Ingredientes** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-010: O sistema deve permitir que usuário exclua ingredientes |
 | Objetivo do Teste 	| Confirmar a exclusão de ingredientes |
