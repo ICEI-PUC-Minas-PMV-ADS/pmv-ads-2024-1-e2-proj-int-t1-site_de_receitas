@@ -29,8 +29,8 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-004 - O sistema deve permitir que o usuário pesquise por receitas cadastradas através de seus ingredientes ou nomes.n |
 |Registro de evidência | - |
-|Resultado | Não implementado  |
-|Ação | Previsto para a próxima etapa. |
+|Resultado | - |
+|Ação | - |
 
 | **Caso de Teste** 	| **CT-05 – Edição de receitas** 	|
 |:---:	|:---:	|
@@ -64,29 +64,29 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-008: O sistema deve permitir que o usuário exclua seu perfil |
 |Registro de evidência | - |
-|Resultado | Impedimento de teste em ct1. |
-|Ação | Correção de ct1. |
+|Resultado | -|
+|Ação | - |
 
 | **Caso de Teste** 	| **CT-09 - CT-09 - Edição de Ingredientes** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-009: O sistema deve permitir que o usuário edite ingredientes já cadastrados |
 |Registro de evidência | - |
-|Resultado | Não implementado  |
-|Ação | Previsto para a próxima etapa. |
+|Resultado | - |
+|Ação | -|
 
 | **Caso de Teste** 	| **CT-10 Exclusão de Ingredientes** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-010: O sistema deve permitir que usuário exclua ingredientes |
 |Registro de evidência | - |
-|Resultado | Impedimento de teste em ct2. |
-|Ação | Correção de ct2 |
+|Resultado | -|
+|Ação | -|
 
 | **Caso de Teste** 	| **CT-11 Privacidade de dados** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RNF-001: O sistema não deve expor dados sensíveis do usuário |
 |Registro de evidência | - |
-|Resultado | Não implementado  |
-|Ação | Previsto para a próxima etapa. |
+|Resultado | - |
+|Ação | - |
 
 | **Caso de Teste** 	| **CT-12 Arquitetura e Framework** 	|
 |:---:	|:---:	|
