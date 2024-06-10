@@ -7,37 +7,37 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-01 – Cadastrar Usuário** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-001: O sistema deve permitir que o usuário se cadastre. |
-|Registro de evidência | - |
-|Resultado | - |
+|Registro de evidência | [Teste CT1](https://drive.google.com/file/d/1_yxnDxokRcgrswnuasG4gyYeeRaLp9Xp/view?usp=sharing) |
+|Resultado | Bem sucedido. |
 |Ação | - |
 
 | **Caso de Teste** 	| **CT-02 - Cadastro de receitas** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-002: O sistema deve permitir que o usuário cadastre novas receitas com o nome dessas receitas e seus respectivos ingredientes e modos de preparo. |
-|Registro de evidência | -|
-|Resultado | - |
-|Ação | Já foi detectado que é um problema na tabela de imagens, correções em andamento.|
+|Registro de evidência | [Teste CT2](https://drive.google.com/file/d/1fKNcuwuhwat81pWiXd3GWsFgNFVBaopA/view?usp=sharing)|
+|Resultado | Falha |
+|Ação | Já foi detectado que é um problema no controller, correções em andamento.|
 
 | **Caso de Teste** 	| **CT-03 – Avaliar receita** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-003 - O sistema deve permitir que usuários adicionem avaliações às receitas por meio de notas que variam de um número à outro (ex: 0 à 5). |
-|Registro de evidência | - |
-|Resultado | - |
-|Ação | - |
+|Registro de evidência | [Teste CT3](https://drive.google.com/file/d/1wXnZ-QTeZpkZ1fvjgCLQ5-PDyyZQ6b-d/view?usp=sharing) |
+|Resultado | Falha. Não salvou e mostrou modo de preparo no lugar de nome da receita. |
+|Ação | Correção da gravação das avaliações. |
 
-| **Caso de Teste** 	| **CT-04 – Pesquisar receita** 	|
+| **Caso de Teste** 	| **CT-04 – Cadastrar Ingrediente** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-004 - O sistema deve permitir que o usuário pesquise por receitas cadastradas através de seus ingredientes ou nomes.n |
-|Registro de evidência | - |
-|Resultado | - |
+|	Requisito Associado 	| RF-004 - O sistema deve permitir que o usuário cadastre novos ingredientes. |
+|Registro de evidência | [Teste CT4](https://drive.google.com/file/d/1qqW30VFi9yea3hMa-QHDPd6AK_dnQtF8/view?usp=sharing) |
+|Resultado | Bem sucedido. |
 |Ação | - |
 
 | **Caso de Teste** 	| **CT-05 – Edição de receitas** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-005: O sistema deve permitir que o usuário edite receitas já cadastradas. |
-|Registro de evidência | - |
-|Resultado | -|
-|Ação | - |
+|Registro de evidência | [Teste CT5](https://drive.google.com/file/d/1rXWZrvyumtE18s-E8hz-gVyzGBrUiBHg/view?usp=sharing) |
+|Resultado | Falha |
+|Ação | Corrigir o controller do crud receita. |
 
 | **Caso de Teste** 	| **CT-06 – Edição de Usuário** 	|
 |:---:	|:---:	|
