@@ -24,13 +24,9 @@ O projeto em desenvolvimento tem como objetivo principal ampliar o conhecimento 
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Disponível para acesso em: https://sitereceitasadse2.azurewebsites.net/
 
-Não deixe de informar o link onde a aplicação estiver disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
-
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
-
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+Usuário - teste@user.com / senha - 123
 
 # Documentação
 
