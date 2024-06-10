@@ -49,37 +49,37 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-06 – Edição de Usuário** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-006: O sistema deve permitir que o usuário edite seus próprios dados |
-|Registro de evidência | - |
-|Resultado | - |
-|Ação | - |
+|Registro de evidência | [Teste CT6](https://drive.google.com/file/d/11q6xLA57Y50-4vsNkQcd0YVrDFHdqeIK/view?usp=sharing) |
+|Resultado | Falha |
+|Ação | Dar acesso ao usuário. |
 
 | **Caso de Teste** 	| **CT-07 – Desfazer avaliação de receita** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-007: O sistema deve permitir que o usuário desfaça sua avaliação |
-|Registro de evidência | - |
-|Resultado | Impedimento de teste em ct2. |
-|Ação | Correção de ct2 |
+|Registro de evidência | [Teste CT7](https://drive.google.com/file/d/1JFqw_ItQDLTOD4lslct8ABtqvzm-So8y/view?usp=sharing) |
+|Resultado | Impedimento de teste em ct3. |
+|Ação | Correção de ct3 |
 
 | **Caso de Teste** 	| **CT-08 – Exclusão de perfil** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-008: O sistema deve permitir que o usuário exclua seu perfil |
-|Registro de evidência | - |
-|Resultado | -|
-|Ação | - |
+|Registro de evidência | [Teste CT8](https://drive.google.com/file/d/1c1llpBpA-CLsmxyctTzy1dpadTF98u_V/view?usp=sharing) |
+|Resultado | Falha - sem acesso. |
+|Ação | Dar acesso ao usuário. |
 
 | **Caso de Teste** 	| **CT-09 - CT-09 - Edição de Ingredientes** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-009: O sistema deve permitir que o usuário edite ingredientes já cadastrados |
-|Registro de evidência | - |
-|Resultado | - |
-|Ação | -|
+|Registro de evidência | [Teste CT9](https://drive.google.com/file/d/15HHzz3lK3N2x8w3PaJfw5lAtHt0f2AeG/view?usp=sharing) |
+|Resultado | Bem Sucedido. |
+|Ação | - |
 
 | **Caso de Teste** 	| **CT-10 Exclusão de Ingredientes** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-010: O sistema deve permitir que usuário exclua ingredientes |
-|Registro de evidência | - |
-|Resultado | -|
-|Ação | -|
+|Registro de evidência | [Teste CT10](https://drive.google.com/file/d/1E8eLh5sk6jottLobcBLTncP8DcoMc95o/view?usp=sharing) |
+|Resultado | Bem Sucedido |
+|Ação | - |
 
 | **Caso de Teste** 	| **CT-11 Privacidade de dados** 	|
 |:---:	|:---:	|
