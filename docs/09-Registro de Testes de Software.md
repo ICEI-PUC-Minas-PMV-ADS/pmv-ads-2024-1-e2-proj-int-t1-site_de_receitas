@@ -42,13 +42,6 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-06 – Edição de Usuário** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-006: O sistema deve permitir que o usuário edite seus próprios dados |
-|Registro de evidência | - |
-|Resultado | -  |
-|Ação | -|
-
-| **Caso de Teste** 	| **CT-06 – Edição de Usuário** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-006: O sistema deve permitir que o usuário edite seus próprios dados |
 |Registro de evidência | [Teste CT6](https://drive.google.com/file/d/11q6xLA57Y50-4vsNkQcd0YVrDFHdqeIK/view?usp=sharing) |
 |Resultado | Falha |
 |Ação | Dar acesso ao usuário. |
@@ -84,43 +77,43 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-11 Privacidade de dados** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RNF-001: O sistema não deve expor dados sensíveis do usuário |
-|Registro de evidência | - |
-|Resultado | - |
-|Ação | - |
+|Registro de evidência | Sem registro. |
+|Resultado | Bem sucedido - o usuário logado ou não não pode ver os dados de outros usuários. |
+|Ação | Deixar o usuário ver os próprios dados. |
 
 | **Caso de Teste** 	| **CT-12 Arquitetura e Framework** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RNF-002: O sistema deve ser desenvolvido utilizando a arquitetura MVC |
-|Registro de evidência | - |
-|Resultado | - |
-|Ação | |
+|Registro de evidência | Sem registro, análise de código. |
+|Resultado | Bem Sucedido. |
+|Ação | - |
 
 | **Caso de Teste** 	| **CT-13 Framework de desenvolvimento** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RNF-003: O sistema deve ser desenvolvido utilizando o framework ASP.NET Core MVC. |
-|Registro de evidência | - |
-|Resultado | - |
+|Registro de evidência | Sem registro, análise de código.  |
+|Resultado | Bem Sucedido. |
 |Ação | - |
 
 | **Caso de Teste** 	| **CT-14 Sistema Multiusuário 1** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RNF-004: O sistema deve ser capaz de lidar com vários usuários simultâneos sem sofrer degradações significativas no desempenho. |
-|Registro de evidência | - |
-|Resultado | - |
+|Registro de evidência | [Teste Multiusuário](https://drive.google.com/file/d/1jYpf1BUfRuUGK1Cfv8V4sgf346PFhe0Q/view?usp=sharing)  |
+|Resultado | Bem sucedido. |
 |Ação | - |
 
 | **Caso de Teste** 	| **CT-15 Sistema Multiusuário 2** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RNF-005: O sistema deve suportar múltiplos usuários simultaneamente. |
-|Registro de evidência | - |
-|Resultado | - |
+|Registro de evidência | [Teste Multiusuário](https://drive.google.com/file/d/1jYpf1BUfRuUGK1Cfv8V4sgf346PFhe0Q/view?usp=sharing) |
+|Resultado | Bem sucedido. |
 |Ação | - |
 
 | **Caso de Teste** 	| **CT-16 Tempo de Resposta** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RNF-006: O sistema não deve ter tempo médio de resposta superior a 5s. |
-|Registro de evidência | - |
-|Resultado | - |
+|Registro de evidência | [Teste Tempo de Resposta](https://drive.google.com/file/d/1h2VuJ8_k1a5RTphXgav56GhJSSuDivV4/view?usp=sharing) |
+|Resultado | Bem sucedido |
 |Ação | - |
 
 | **Caso de Teste** 	| **CT-17 Clean Code** 	|
@@ -133,15 +126,15 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-18 Testar em diferentes navegadores** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RNF-008 - O sistema deve ser executado nos navegadores Google Chrome, Opera e Edge. |
-|Registro de evidência | - |
-|Resultado | - |
+|Registro de evidência | [Teste Navegador](https://drive.google.com/file/d/1jYpf1BUfRuUGK1Cfv8V4sgf346PFhe0Q/view?usp=sharing)  |
+|Resultado | Bem sucedido. |
 |Ação | - |
 
-| **Caso de Teste** 	| **CT-19 Tempo de Resposta** 	|
+| **Caso de Teste** 	| **CT-19 Permanência de conteúdo** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RFN - 010: O sistema deve continuar funcionando apresentando conteúdo já carregado em caso de queda de conexão ou instabilidade no banco de dados. |
-|Registro de evidência | - |
-|Resultado | - |
+|Registro de evidência | Sem registro. |
+|Resultado | Bem sucedido. |
 |Ação | - |
 
 
@@ -150,7 +143,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 
 ## Avaliação
 
-Os resultados dos testes indicam que há problemas em partes fundamentais do sistema, com correções já em andamento, e algumas melhorias de usabilidade a ser implementadas. Também mostram que as propostas de desenvolvimento estão sendo seguidas, mesmo que ainda em andamento.
+Os resultados dos testes indicam que há problemas em partes fundamentais do sistema, com correções já em andamento, mas que em sua grande parte está funcionando e cumpre múltiplos requisitos.
 <!--
 > **Links Úteis**:
 > - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
