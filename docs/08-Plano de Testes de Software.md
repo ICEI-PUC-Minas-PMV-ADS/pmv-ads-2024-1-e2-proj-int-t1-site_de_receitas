@@ -143,7 +143,7 @@ Por exemplo:
 |Critério de Êxito | - O sistema funciona em todos os navegadores testados. |
 
 
-| **Caso de Teste** 	| **CT-09 – Tempo de Resposta** 	|
+| **Caso de Teste** 	| **CT-09 – Permanência de conteúdo** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RFN - 010: O sistema deve continuar funcionando apresentando conteúdo já carregado em caso de queda de conexão ou instabilidade no banco de dados. |
 | Objetivo do Teste 	| Verificar se a aplicação apresenta o conteúdo já carregado. |
