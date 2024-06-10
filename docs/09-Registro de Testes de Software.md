@@ -119,8 +119,8 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-17 Clean Code** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RFN - 007: O sistema deve ser desenvolvido utilizando práticas recomendadas de clean code. |
-|Registro de evidência | - |
-|Resultado | - |
+|Registro de evidência | Sem registro. |
+|Resultado | Bem sucedido. |
 |Ação | - |
 
 | **Caso de Teste** 	| **CT-18 Testar em diferentes navegadores** 	|
