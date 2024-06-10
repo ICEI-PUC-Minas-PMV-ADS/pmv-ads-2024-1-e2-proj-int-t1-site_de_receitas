@@ -48,7 +48,7 @@ Usuário - teste@user.com / senha - 123
 
 # Código
 
-<li><a href="src/README.md"> Código Fonte</a></li>
+<li><a href="src/"> Código Fonte</a></li>
 
 # Apresentação
 
