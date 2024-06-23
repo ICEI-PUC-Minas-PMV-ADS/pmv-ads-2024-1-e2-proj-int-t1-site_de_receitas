@@ -20,6 +20,14 @@ O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do conte
 ## Conjunto de Slides (Estrutura)
 
 O grupo deve distribuir de forma coerente o conteúdo a ser apresentado, dentro do tempo determinado. Importante ressaltar a importância da descrição clara de todo o andamento do projeto, insumos gerados e requisitos atendidos.
+
+# Vídeo para a mostra final dos projetos
+
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t1-site_de_receitas/assets/98063900/8b36aedc-dd54-44c4-b6e1-7f8da9332929
+
+
  
 > **Links Úteis**:
 > - [A regra 10-20-30 para apresentações de sucesso](https://revistapegn.globo.com/Noticias/noticia/2014/07/regra-10-20-30-para-apresentacoes-de-sucesso.html)
