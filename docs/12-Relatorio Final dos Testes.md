@@ -49,7 +49,38 @@ Avaliação:
 |Exclusão de Perfil (RF-008) | Parcialmente Alcançado | Usuários enfrentaram dificuldades ao tentar excluir seus perfis devido a problemas de acesso. |
 |Edição de Ingredientes (RF-009) | Alcançado | Os usuários podem editar ingredientes já cadastrados. |
 
-## Os requisitos acordados estão funcionando? Em que nível eles foram atendidos?
+## 3.Os requisitos acordados estão funcionando? Em que nível eles foram atendidos?
+### 3.1.Requisitos funcionais
+|ID    | Status  | 
+|------|-----------------------------------------|
+| RF-001 | Completamente funcional |
+| RF-002 | Parcialmente funcional |
+| RF-003 | Parcialmente funcional |
+| RF-004 | Completamente funcional |
+| RF-005 | Parcialmente funcional |
+| RF-006 | Parcialmente funcional |
+| RF-007 | Parcialmente funcional |
+| RF-008 | Parcialmente funcional |
+| RF-009 | Completamente funcional |
+| RF-010 | Completamente funcional |
+| RF-011 | Parcialmente funcional |
+
+### 3.2.Requisitos não funcionais
+|ID    | Status  | 
+|------|-----------------------------------------|
+| RNF-001 | Completamente funcional |
+| RNF-002 | Completamente funcional |
+| RNF-003 | Completamente funcional |
+| RNF-004 | Parcialmente funcional |
+| RNF-005 | Completamente funcional |
+| RNF-006 | Completamente funcional |
+| RNF-007 | Parcialmente funcional |
+| RNF-008 | Completamente funcional |
+| RNF-009 | Parcialmente funcional |
+| RNF-010 | Parcialmente funcional |
+| RNF-011 | Completamente funcional |
+| RNF-012 | Não Atendido |
+| RNF-013 | Não Atendido |
 
 ## Quais os requisitos que não foram atendidos (sugestão de melhoria)
 
