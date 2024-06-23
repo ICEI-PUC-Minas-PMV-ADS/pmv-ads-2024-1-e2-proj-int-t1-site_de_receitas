@@ -12,15 +12,15 @@ Após a realização dos testes de usabilidade, obteve-se o seguinte relatório 
 
 | **Caso de Teste** 	| **CT-21 – Persistência de Funcionamento** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RNF-009 - OO sistema deve continuar funcionando apresentando conteúdo já carregado em caso de queda de conexão ou instabilidade no banco de dados |
-|Registro de evidência | Sem registro. |
+|	Requisito Associado 	| RNF-009 - OO sistema deve continuar funcionando apresentando conteúdo já carregado em caso de queda de conexão. |
+|Registro de evidência | A página já carregada se manteve disponível diante de falta de conexão. |
 |Resultado | Bem sucedido. |
 |Ação | - |
 
 | **Caso de Teste** 	| **CT-22 – Responsividade** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	|  RNF-010 - O sistema deve ser responsivo. |
-|Registro de evidência | Sem registro (a captura de vídeo bugou inteira com o teste de responsividade) |
+|Registro de evidência | A página se ajustou adequadamente às diferentes proporções de telas em que cada um testou. |
 |Resultado | Bem sucedido. |
 |Ação |  |
 
@@ -34,14 +34,14 @@ Após a realização dos testes de usabilidade, obteve-se o seguinte relatório 
 | **Caso de Teste** 	| **CT-24 – Aplicação em manutenção** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RNF-012 - O sistema deverá informar ao usuário quando o mesmo estiver em manutenção e/ou fora do ar. |
-|Registro de evidência | Sem registro. |
-|Resultado | Garantido pela Azure. |
+|Registro de evidência | ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t1-site_de_receitas/assets/91014344/cc77f943-0ef4-4eeb-9289-5628ba21011c) |
+|Resultado | Bem sucedido. |
 |Ação | - |
 
 | **Caso de Teste** 	| **CT-25 – Usabilidade** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RNF-013 - O sistema deverá ter uma fácil usabilidade para o usuário. |
-|Registro de evidência | Sem registro específico. |
+|Registro de evidência | Os usuários que testaram confirmaram que diante dos apontamentos que fizeram ao longo do desenvolvimento verificaram um aumento da facilidade de uso do sistema. |
 |Resultado |  Bem sucedido. |
 |Ação | - |
 
