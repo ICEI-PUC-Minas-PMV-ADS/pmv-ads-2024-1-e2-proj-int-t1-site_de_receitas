@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
-  - family-names: "Bizarria Bezerra"  
+  - family-names: "Bizarria Bezerra"
     given-names: "Alex"
   - family-names: "Figueiredo Camargo"
-    given-names: "Alexandre" 
+    given-names: "Alexandre"
   - family-names: "Alves Siqueira"
-    given-names: "Bernanrdo"
+    given-names: "Bernardo"
   - family-names: "Soutelo Marra"
     given-names: "Bernardo Miguel"
   - family-names: "Gontijo de Castro"
@@ -17,14 +17,13 @@ authors:
     given-names: "Matheus"
   - name-suffix: "Professor"
     affiliation: "PUC Minas"
-    family-names: "Ribeiro da Mota" 
+    family-names: "Ribeiro da Mota"
     given-names: "Rosilane"
-  -
 keywords:
-  - "Site"  
-  - "Receitas" 
+  - "Site"
+  - "Receitas"
   - "Ingredientes"
 title: "Site de Receitas"
-version: 1.0.010.5281
-date-released: 2024-06-23
+version: "1.0.010.5281"
+date-released: "2024-06-23"
 url: "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t1-site_de_receitas"
