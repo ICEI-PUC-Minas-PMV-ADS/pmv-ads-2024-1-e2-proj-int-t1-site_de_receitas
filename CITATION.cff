@@ -3,25 +3,18 @@ message: "If you use this software, please cite it as below."
 authors:
   - family-names: "Bizarria Bezerra"  
     given-names: "Alex"
-    orcid: 
   - family-names: "Figueiredo Camargo"
     given-names: "Alexandre" 
-    orcid: 
   - family-names: "Alves Siqueira"
     given-names: "Bernanrdo"
-    orcid: 
   - family-names: "Soutelo Marra"
     given-names: "Bernardo Miguel"
-    orcid:
   - family-names: "Gontijo de Castro"
     given-names: "Isabela"
-    orcid:
   - family-names: "Caliari Machado"
     given-names: "Lorrayne Vitoria"
-    orcid:
   - family-names: "Reis Castelliano"
     given-names: "Matheus"
-    orcid:
   - name-suffix: "Professor"
     affiliation: "PUC Minas"
     family-names: "Ribeiro da Mota" 
