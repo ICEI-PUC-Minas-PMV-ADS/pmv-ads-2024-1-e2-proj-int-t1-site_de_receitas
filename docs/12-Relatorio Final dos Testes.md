@@ -51,36 +51,36 @@ Avaliação:
 
 ## 3.Os requisitos acordados estão funcionando? Em que nível eles foram atendidos?
 ### 3.1.Requisitos funcionais
-|ID    | Status  | 
-|------|-----------------------------------------|
-| RF-001 | Completamente funcional |
-| RF-002 | Parcialmente funcional |
-| RF-003 | Parcialmente funcional |
-| RF-004 | Completamente funcional |
-| RF-005 | Parcialmente funcional |
-| RF-006 | Parcialmente funcional |
-| RF-007 | Parcialmente funcional |
-| RF-008 | Parcialmente funcional |
-| RF-009 | Completamente funcional |
-| RF-010 | Completamente funcional |
-| RF-011 | Parcialmente funcional |
+|ID    | Descrição  | Status  | 
+|------|-----------------------------------------|------|
+| RF-001 | O sistema deve permitir que o usuário se cadastre | Completamente funcional |
+| RF-002 | O sistema deve permitir que o usuário cadastre novas receitas com o nome dessas receitas e seus respectivos ingredientes e modos de preparo | Parcialmente funcional |
+| RF-003 | O sistema deve permitir que usuários adicionem avaliações às receitas por meio de notas que variam entre Ruim, Bom e Ótimo | Parcialmente funcional |
+| RF-004 | O sistema deve permitir que o usuário cadastre novos ingredientes | Completamente funcional |
+| RF-005 | O sistema deve permitir que o usuário edite receitas já cadastradas | Parcialmente funcional |
+| RF-006 | O sistema deve permitir que o usuário edite seus dados | Parcialmente funcional |
+| RF-007 | O sistema deve permitir que o usuário desfaça sua avalição | Parcialmente funcional |
+| RF-008 | O sistema deve permitir que o usuário exclua seu perfil | Parcialmente funcional |
+| RF-009 | O sistema deve permitir que o usuário edite ingredientes já cadastrados | Completamente funcional |
+| RF-010 | O sistema deve permitir que usuário exclua ingredientes | Completamente funcional |
+| RF-011 | O sistema deve permitir que usuário modifique a avaliação feitas sobre determinada receita | Parcialmente funcional |
 
 ### 3.2.Requisitos não funcionais
-|ID    | Status  | 
-|------|-----------------------------------------|
-| RNF-001 | Completamente funcional |
-| RNF-002 | Completamente funcional |
-| RNF-003 | Completamente funcional |
-| RNF-004 | Parcialmente funcional |
-| RNF-005 | Completamente funcional |
-| RNF-006 | Completamente funcional |
-| RNF-007 | Parcialmente funcional |
-| RNF-008 | Completamente funcional |
-| RNF-009 | Parcialmente funcional |
-| RNF-010 | Parcialmente funcional |
-| RNF-011 | Completamente funcional |
-| RNF-012 | Não Atendido |
-| RNF-013 | Não Atendido |
+|ID    | Descrição  | Status|
+|------|-----------------------------------------|------|
+| RNF-001 | O sistema não deve expor dados sensíveis do usuário | Completamente funcional |
+| RNF-002 | O sistema deve ser desenvolvido utilizando a arquitetura MVC | Completamente funcional |
+| RNF-003 | O sistema deve ser desenvolvido utilizando o framework ASP.NET Core MVC | Completamente funcional |
+| RNF-004 | O sistema deve ser capaz de lidar com vários usuários simultâneos sem sofrer degradações significativas no desempenho | Parcialmente funcional |
+| RNF-005 | O sistema deve suportar múltiplos usuários simultaneamente | Completamente funcional |
+| RNF-006 | O sistema não deve ter tempo médio de resposta superior a 5s | Completamente funcional |
+| RNF-007 | O sistema deve ser desenvolvido utilizando práticas recomendadas de clean code | Parcialmente funcional |
+| RNF-008 | O sistema deve ser executado nos navegadores Google Chrome, Opera e Edge | Completamente funcional |
+| RNF-009 | O sistema deve continuar funcionando apresentando conteúdo já carregado em caso de queda de conexão ou instabilidade no banco de dados | Parcialmente funcional |
+| RNF-010 | O sistema deve ser responsivo. | Parcialmente funcional |
+| RNF-011 | O sistema deve ser acessível pela internet. | Completamente funcional |
+| RNF-012 | O sistema deverá informar ao usuário quando o mesmo estiver em manutenção e/ou fora do ar. | Não Atendido |
+| RNF-013 | sistema deverá ter uma fácil usabilidade para o usuário. | Não Atendido |
 
 ## Quais os requisitos que não foram atendidos (sugestão de melhoria)
 
