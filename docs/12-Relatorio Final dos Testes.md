@@ -74,7 +74,7 @@ Avaliação:
 | RNF-004 | O sistema deve ser capaz de lidar com vários usuários simultâneos sem sofrer degradações significativas no desempenho | Parcialmente funcional |
 | RNF-005 | O sistema deve suportar múltiplos usuários simultaneamente | Completamente funcional |
 | RNF-006 | O sistema não deve ter tempo médio de resposta superior a 5s | Completamente funcional |
-| RNF-007 | O sistema deve ser desenvolvido utilizando práticas recomendadas de clean code | Parcialmente funcional |
+| RNF-007 | O sistema deve ser desenvolvido utilizando práticas recomendadas de clean code | Completamente funcional |
 | RNF-008 | O sistema deve ser executado nos navegadores Google Chrome, Opera e Edge | Completamente funcional |
 | RNF-009 | O sistema deve continuar funcionando apresentando conteúdo já carregado em caso de queda de conexão ou instabilidade no banco de dados | Parcialmente funcional |
 | RNF-010 | O sistema deve ser responsivo. | Parcialmente funcional |
@@ -82,7 +82,21 @@ Avaliação:
 | RNF-012 | O sistema deverá informar ao usuário quando o mesmo estiver em manutenção e/ou fora do ar. | Não Atendido |
 | RNF-013 | sistema deverá ter uma fácil usabilidade para o usuário. | Não Atendido |
 
-## Quais os requisitos que não foram atendidos (sugestão de melhoria)
+## 4.Quais os requisitos que não foram atendidos (sugestão de melhoria)
+### 4.1.Requisitos funcionais não atendidos
+|ID | Status | Sugestão  |
+|------|-----------------------------------------|------|
+| RF-002 | Parcialmente funcional | Investigar e corrigir as funcionalidades faltantes para o cadastro completo de receitas, garantindo que todos os campos de ingredientes e modos de preparo possam ser adicionados conforme especificado. |
+| RF-003 | Parcialmente funcional | Implementar completamente a funcionalidade de avaliação, assegurando que todos os tipos de notas possam ser atribuídos às receitas e que a média de avaliações seja calculada corretamente. | 
+| RF-005 | Parcialmente funcional  | Verificar e implementar a capacidade completa de edição de receitas, garantindo que todas as informações possam ser modificadas conforme necessário pelo usuário. | 
+
+### 4.2.Requisitos funcionais não atendidos
+|ID | Status | Sugestão  |
+|------|-----------------------------------------|------|
+| RNF-004 | Parcialmente funcional | Realizar um estudo de performance e otimização do sistema para lidar de forma mais eficaz com múltiplos usuários simultâneos, minimizando qualquer degradação de desempenho.|
+| RNF-009 | Parcialmente funcional | Implementar mecanismos de cache ou armazenamento temporário para que o sistema possa manter a disponibilidade do conteúdo mesmo em situações de instabilidade.|
+| RNF-012 | Não atendido | Implementar uma página de manutenção ou uma mensagem clara para informar aos usuários quando o sistema estiver inativo por manutenção ou problemas técnicos.|
+| RNF-013 | Não atendido | Realizar testes de usabilidade e coletar feedback dos usuários para identificar pontos de melhoria na interface e na experiência geral do usuário.|
 
 
 
